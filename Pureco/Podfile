@@ -9,4 +9,5 @@ target 'Pureco' do
   pod 'Firebase'
   pod 'FirebaseDatabase'
   pod 'FirebaseStorage'
+  pod 'SwiftLint'
 end
