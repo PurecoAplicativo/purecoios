@@ -14,7 +14,7 @@
         <!--About View Controller-->
         <scene sceneID="tos-zV-NI3">
             <objects>
-                <viewController id="NWU-ez-zgo" customClass="AboutViewController" customModule="Pureco_Drop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NWU-ez-zgo" customClass="AboutViewController" customModule="Pureco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2uR-2M-QA6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +30,22 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGn-RD-InB">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pureco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bi7-Cn-hvy">
+                                                            <rect key="frame" x="17" y="16" width="288" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="xRr-w6-bj1"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="bi7-Cn-hvy" firstAttribute="top" secondItem="eGn-RD-InB" secondAttribute="top" constant="16" id="WFh-d6-573"/>
+                                                        <constraint firstItem="bi7-Cn-hvy" firstAttribute="leading" secondItem="eGn-RD-InB" secondAttribute="leading" constant="17" id="gkL-AL-5sF"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
@@ -59,6 +74,7 @@
                                         <constraint firstAttribute="trailing" secondItem="bwW-CT-9EV" secondAttribute="trailing" constant="20" id="44y-vO-chG"/>
                                         <constraint firstItem="bwW-CT-9EV" firstAttribute="top" secondItem="k8x-YM-dMC" secondAttribute="top" constant="20" id="EKy-TT-y16"/>
                                         <constraint firstItem="uaQ-mg-gAe" firstAttribute="top" secondItem="k8x-YM-dMC" secondAttribute="top" id="Kcv-6r-LbK"/>
+                                        <constraint firstItem="bwW-CT-9EV" firstAttribute="leading" secondItem="bi7-Cn-hvy" secondAttribute="trailing" constant="20" id="Mdz-9g-U6s"/>
                                         <constraint firstAttribute="bottom" secondItem="uaQ-mg-gAe" secondAttribute="bottom" id="cuJ-YP-f4k"/>
                                         <constraint firstItem="uaQ-mg-gAe" firstAttribute="leading" secondItem="k8x-YM-dMC" secondAttribute="leading" id="iak-Za-9ul"/>
                                     </constraints>
