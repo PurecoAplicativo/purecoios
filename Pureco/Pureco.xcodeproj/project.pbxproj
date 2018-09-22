@@ -10,6 +10,8 @@
 		15D69078CC8D743E431D140F /* Pods_Pureco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 762D75C6DBC9F3627A207178 /* Pods_Pureco.framework */; };
 		3E4794D021570043005FF170 /* PreviousCleaningCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794CF21570043005FF170 /* PreviousCleaningCard.swift */; };
 		3E4794D3215700E3005FF170 /* ShowWarning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794D2215700E3005FF170 /* ShowWarning.swift */; };
+		3E4794D62157056E005FF170 /* Cleaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794D52157056E005FF170 /* Cleaning.swift */; };
+		3E4794D821570645005FF170 /* DateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794D721570645005FF170 /* DateFormatters.swift */; };
 		3EF7FBEE2156E9480015B981 /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF7FBEC2156E9480015B981 /* MainScreen.storyboard */; };
 		3EF7FBEF2156E9480015B981 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBED2156E9480015B981 /* MainScreenViewController.swift */; };
 		3EF7FBF22156E9510015B981 /* CorneredImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBF02156E9510015B981 /* CorneredImageView.swift */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		3E4794CF21570043005FF170 /* PreviousCleaningCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousCleaningCard.swift; sourceTree = "<group>"; };
 		3E4794D2215700E3005FF170 /* ShowWarning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowWarning.swift; sourceTree = "<group>"; };
+		3E4794D52157056E005FF170 /* Cleaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cleaning.swift; sourceTree = "<group>"; };
+		3E4794D721570645005FF170 /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatters.swift; sourceTree = "<group>"; };
 		3EF7FBEC2156E9480015B981 /* MainScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
 		3EF7FBED2156E9480015B981 /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		3EF7FBF02156E9510015B981 /* CorneredImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorneredImageView.swift; sourceTree = "<group>"; };
@@ -72,6 +76,14 @@
 				3E4794D2215700E3005FF170 /* ShowWarning.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3E4794D42157055B005FF170 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E4794D52157056E005FF170 /* Cleaning.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		3EF7FBE52156E8EA0015B981 /* Modules */ = {
@@ -160,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				3EF7FBFF2156EACA0015B981 /* ColorConstants.swift */,
+				3E4794D721570645005FF170 /* DateFormatters.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -219,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				B19E3743214985EF007C7B7A /* AppDelegate.swift */,
+				3E4794D42157055B005FF170 /* Model */,
 				3EF7FC032156F7910015B981 /* Services */,
 				3EF7FBE52156E8EA0015B981 /* Modules */,
 				3E4794D1215700D0005FF170 /* Extensions */,
@@ -362,7 +376,9 @@
 				3E4794D021570043005FF170 /* PreviousCleaningCard.swift in Sources */,
 				B19E3744214985EF007C7B7A /* AppDelegate.swift in Sources */,
 				3EF7FC022156F65A0015B981 /* MainScreenPresenter.swift in Sources */,
+				3E4794D821570645005FF170 /* DateFormatters.swift in Sources */,
 				3EF7FBF22156E9510015B981 /* CorneredImageView.swift in Sources */,
+				3E4794D62157056E005FF170 /* Cleaning.swift in Sources */,
 				3EF7FC002156EACA0015B981 /* ColorConstants.swift in Sources */,
 				3EF7FC062156F86A0015B981 /* ServiceProtocols.swift in Sources */,
 				3EF7FBEF2156E9480015B981 /* MainScreenViewController.swift in Sources */,

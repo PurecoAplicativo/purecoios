@@ -12,7 +12,7 @@ class MainScreenViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var schedulingCard: ScheduleCleaningCard!
-    
+    @IBOutlet weak var lasrCleaningsCard: PreviousCleaningCard!
     
     // MARK: - Variables
     
@@ -44,5 +44,6 @@ extension MainScreenViewController: MainScreenViewProtocol {
     
     func setup() {
         (viewModel?.isLoggedIn)! ? schedulingCard.setValid() : schedulingCard.setInvalid()
+        lasrCleaningsCard.setup(cleaning: viewModel?.lastSchedules?.first)
     }
 }

@@ -85,11 +85,11 @@ Entre visitas a essas comunidades, localizadas à cerca de 9Km da Cidade Univers
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="345" id="uyS-Gc-T3F"/>
                                                 </constraints>
-                                                <mutableString key="text">Nossa ideia consistem em cirar um aplicativo que conecte as mulheres do Campo dos Amarais com os moradores de Barão Geraldo, principalmente os universitários, que necessitam de serviços de limpeza.
+                                                <string key="text">Nossa ideia consistem em cirar um aplicativo que conecte as mulheres do Campo dos Amarais com os moradores de Barão Geraldo, principalmente os universitários, que necessitam de serviços de limpeza.
 No futuro, as mulheres serão proprietárias deste aplicativo, e para isso, aprenderão conceitos de gestão e administração.
 Dessa forma alcançaremos 2 objetivos:
 - Melhorar a qualidade de vida destas mulheres através do aumenteo de renda
-- E empoderá-las através de capacitações e treinamentos de gestão, com aumento de sua autoestima e autoconfiança.</mutableString>
+- E empoderá-las através de capacitações e treinamentos de gestão, com aumento de sua autoestima e autoconfiança.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>

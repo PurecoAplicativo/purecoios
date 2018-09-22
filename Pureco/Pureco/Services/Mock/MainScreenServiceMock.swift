@@ -11,6 +11,6 @@ import Foundation
 class MainScreenServiceMock: UserServiceProtocol {
     
     func getMainScreenInfo(completion: (MainScreenViewModel) -> Void) {
-        completion( MainScreenViewModel() )
+        completion( MainScreenViewModel(isLoggedIn: false, lastSchedules: [Cleaning(date: Date(), address: "Rua Doutor Boareto de Camargo, 177 - Campinas Barão Geraldo")]) )
     }
 }
