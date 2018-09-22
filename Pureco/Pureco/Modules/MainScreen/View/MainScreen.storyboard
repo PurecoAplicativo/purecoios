@@ -50,7 +50,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSZ-2U-Och">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="179.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4V-Ks-EXC" customClass="CardView" customModule="Pureco" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4V-Ks-EXC" customClass="ScheduleCleaningCard" customModule="Pureco" customModuleProvider="target">
                                                 <rect key="frame" x="19.5" y="18.5" width="337.5" height="143.5"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purecoLogoNormal" translatesAutoresizingMaskIntoConstraints="NO" id="3s1-PP-yDe">
@@ -65,16 +65,28 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvY-eR-Qor">
+                                                        <rect key="frame" x="0.5" y="0.5" width="337.5" height="143.5"/>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstItem="yvY-eR-Qor" firstAttribute="centerX" secondItem="d4V-Ks-EXC" secondAttribute="centerX" id="Cmq-ya-f1w"/>
+                                                    <constraint firstItem="yvY-eR-Qor" firstAttribute="width" secondItem="d4V-Ks-EXC" secondAttribute="width" id="EDO-Hp-xf0"/>
                                                     <constraint firstItem="4DQ-Yh-vi5" firstAttribute="leading" secondItem="3s1-PP-yDe" secondAttribute="trailing" constant="10" id="LxH-uC-fan"/>
                                                     <constraint firstItem="4DQ-Yh-vi5" firstAttribute="centerY" secondItem="3s1-PP-yDe" secondAttribute="centerY" id="P4F-hv-9Nx"/>
                                                     <constraint firstAttribute="bottom" secondItem="3s1-PP-yDe" secondAttribute="bottom" constant="12" id="UI1-RO-9gO"/>
+                                                    <constraint firstItem="yvY-eR-Qor" firstAttribute="centerY" secondItem="d4V-Ks-EXC" secondAttribute="centerY" id="c2w-Yf-Aup"/>
                                                     <constraint firstItem="3s1-PP-yDe" firstAttribute="leading" secondItem="d4V-Ks-EXC" secondAttribute="leading" constant="12" id="iU4-MF-don"/>
                                                     <constraint firstItem="3s1-PP-yDe" firstAttribute="top" secondItem="d4V-Ks-EXC" secondAttribute="top" constant="12" id="m9F-k9-DVw"/>
+                                                    <constraint firstItem="yvY-eR-Qor" firstAttribute="height" secondItem="d4V-Ks-EXC" secondAttribute="height" id="q0c-Rt-jAw"/>
                                                     <constraint firstAttribute="trailing" secondItem="4DQ-Yh-vi5" secondAttribute="trailing" constant="10" id="xgJ-hf-zRO"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="button" destination="yvY-eR-Qor" id="nvf-8L-qEJ"/>
+                                                    <outlet property="image" destination="3s1-PP-yDe" id="F8n-7B-xwL"/>
+                                                    <outlet property="label" destination="4DQ-Yh-vi5" id="fHc-Bp-WBY"/>
+                                                </connections>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -88,7 +100,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KuF-TJ-MUb">
                                         <rect key="frame" x="0.0" y="179.5" width="375" height="179.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgD-qA-bBs" customClass="CardView" customModule="Pureco" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgD-qA-bBs" customClass="PreviousCleaningCard" customModule="Pureco" customModuleProvider="target">
                                                 <rect key="frame" x="19" y="18" width="337.5" height="143.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Limpezas Passadas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWH-Mz-VEL">
@@ -97,8 +109,8 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não há  registros passados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UC-GM-9KL">
-                                                        <rect key="frame" x="65" y="62" width="207.5" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não há registros passados" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UC-GM-9KL">
+                                                        <rect key="frame" x="68" y="62" width="203" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -112,6 +124,10 @@
                                                     <constraint firstItem="6UC-GM-9KL" firstAttribute="centerY" secondItem="zgD-qA-bBs" secondAttribute="centerY" id="arv-Z7-s0z"/>
                                                     <constraint firstItem="ZWH-Mz-VEL" firstAttribute="top" secondItem="zgD-qA-bBs" secondAttribute="top" constant="15" id="q82-wF-eJZ"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="titleLabel" destination="ZWH-Mz-VEL" id="Cl1-IE-tGe"/>
+                                                    <outlet property="warningLabel" destination="6UC-GM-9KL" id="Xkf-3p-wph"/>
+                                                </connections>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -217,6 +233,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YcN-Ww-ILP"/>
                     </view>
+                    <connections>
+                        <outlet property="schedulingCard" destination="d4V-Ks-EXC" id="i82-qg-5hn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAs-6w-SOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

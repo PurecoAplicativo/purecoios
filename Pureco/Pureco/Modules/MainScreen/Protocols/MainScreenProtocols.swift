@@ -15,6 +15,7 @@ protocol MainScreenViewProtocol {
     
     func startLoading()
     func stopLoading()
+    func setup()
     
 }
 
@@ -22,4 +23,5 @@ protocol MainScreenPresenterProtocol {
     
     var view: MainScreenViewProtocol? { get }
     func didLoad()
+    
 }

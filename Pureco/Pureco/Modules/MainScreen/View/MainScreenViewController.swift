@@ -10,9 +10,17 @@ import UIKit
 
 class MainScreenViewController: UIViewController {
     
+    // MARK: - Outlets
+    @IBOutlet weak var schedulingCard: ScheduleCleaningCard!
+    
+    
+    // MARK: - Variables
+    
     var presenter: MainScreenPresenterProtocol?
     var viewModel: MainScreenViewModel?
 
+    // MARK: - UIViewController Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter = MainScreenPresenter(view: self)
@@ -20,6 +28,8 @@ class MainScreenViewController: UIViewController {
     }
     
 }
+
+// MARK: - MainScreenViewProtocol
 
 extension MainScreenViewController: MainScreenViewProtocol {
     
@@ -29,5 +39,10 @@ extension MainScreenViewController: MainScreenViewProtocol {
     
     func stopLoading() {
         self.view.isUserInteractionEnabled = true
+        showWarning(title: "Finished Loading", twoLined: false)
+    }
+    
+    func setup() {
+        (viewModel?.isLoggedIn)! ? schedulingCard.setValid() : schedulingCard.setInvalid()
     }
 }

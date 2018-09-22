@@ -10,8 +10,11 @@ import UIKit
 
 extension UIColor {
     
+    // Logo Colors
     static var purecoDarkBlue = UIColor(red: 25.0/255.0, green: 91.0/255.0, blue: 163.0/255.0, alpha: 1)
     static var purecoMediumBlue = UIColor(red: 39.0/255.0, green: 142.0/255.0, blue: 203.0/255.0, alpha: 1)
     static var purecoLightBlue = UIColor(red: 49.0/255.0, green: 169.0/255.0, blue: 221.0/255.0, alpha: 1)
     
+    // Label Colors
+    static var unactiveLabelGray = UIColor(red: 184.0/255.0, green: 184.0/255.0, blue: 184.0/255.0, alpha: 1)
 }

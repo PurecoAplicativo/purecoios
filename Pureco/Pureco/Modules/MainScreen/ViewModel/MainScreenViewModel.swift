@@ -11,5 +11,5 @@ import Foundation
 class MainScreenViewModel {
     
     var isLoggedIn: Bool { return false }
-    
+    var lastSchedules: [String] { return [] }
 }

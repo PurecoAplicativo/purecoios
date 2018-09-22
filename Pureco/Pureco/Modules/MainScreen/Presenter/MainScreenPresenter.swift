@@ -15,6 +15,7 @@ class MainScreenPresenter: MainScreenPresenterProtocol {
     
     init(view: MainScreenViewProtocol) {
         self.view = view
+        self.service = MainScreenServiceMock()
     }
     
     func didLoad() {
@@ -22,6 +23,7 @@ class MainScreenPresenter: MainScreenPresenterProtocol {
         service?.getMainScreenInfo(completion: { (model) in
             self.view?.viewModel = model
             self.view?.stopLoading()
+            self.view?.setup()
         })
     }
     
