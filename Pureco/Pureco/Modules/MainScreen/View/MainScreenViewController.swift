@@ -18,6 +18,7 @@ class MainScreenViewController: UIViewController {
     
     var presenter: MainScreenPresenterProtocol?
     var viewModel: MainScreenViewModel?
+    var loadingScreen: UIView?
 
     // MARK: - UIViewController Methods
     
@@ -35,10 +36,12 @@ extension MainScreenViewController: MainScreenViewProtocol {
     
     func startLoading() {
         self.view.isUserInteractionEnabled = false
+        loadingScreen = self.showFullScreenLoading()
     }
     
     func stopLoading() {
         self.view.isUserInteractionEnabled = true
+        loadingScreen?.removeFromSuperview()
         showWarning(title: "Finished Loading", twoLined: false)
     }
     

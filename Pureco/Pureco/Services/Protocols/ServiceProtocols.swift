@@ -9,5 +9,5 @@
 import Foundation
 
 protocol UserServiceProtocol {
-    func getMainScreenInfo(completion: (_ viewModel: MainScreenViewModel) -> Void)
+    func getMainScreenInfo(completion: @escaping (_ viewModel: MainScreenViewModel, _ error: Error?) -> Void)
 }

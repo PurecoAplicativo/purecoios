@@ -19,11 +19,15 @@ class PreviousCleaningCard: CardView {
     func setup(cleaning: Cleaning?) {
         guard let cleaning = cleaning else {
             warningLabel?.isHidden = false
+            warningLabel?.textColor = UIColor.unactiveLabelGray
             dateLabel?.text = ""
             addressLabel?.text = ""
             lastCleaningLabel?.text = ""
             return
         }
+        dateLabel?.isHidden = false
+        addressLabel?.isHidden = false
+        lastCleaningLabel?.isHidden = false
         warningLabel?.isHidden = true
         addressLabel?.text = cleaning.address
         dateLabel?.text = DateFormatter.commonDateFormat.string(from: cleaning.date)

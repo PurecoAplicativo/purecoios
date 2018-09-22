@@ -20,10 +20,15 @@ class MainScreenPresenter: MainScreenPresenterProtocol {
     
     func didLoad() {
         view?.startLoading()
-        service?.getMainScreenInfo(completion: { (model) in
+        service?.getMainScreenInfo(completion: { (model, error)  in
+            if let error = error {
+                print(error.localizedDescription)
+            }
             self.view?.viewModel = model
-            self.view?.stopLoading()
-            self.view?.setup()
+            DispatchQueue.main.async {
+                self.view?.stopLoading()
+                self.view?.setup()
+            }
         })
     }
     
