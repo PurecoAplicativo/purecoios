@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		15D69078CC8D743E431D140F /* Pods_Pureco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 762D75C6DBC9F3627A207178 /* Pods_Pureco.framework */; };
+		3EF7FBEE2156E9480015B981 /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF7FBEC2156E9480015B981 /* MainScreen.storyboard */; };
+		3EF7FBEF2156E9480015B981 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBED2156E9480015B981 /* MainScreenViewController.swift */; };
+		3EF7FBF22156E9510015B981 /* CorneredImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBF02156E9510015B981 /* CorneredImageView.swift */; };
+		3EF7FBF32156E9510015B981 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBF12156E9510015B981 /* CardView.swift */; };
+		3EF7FBF62156E9640015B981 /* MainScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBF42156E95A0015B981 /* MainScreenProtocols.swift */; };
+		3EF7FBF72156E9660015B981 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBF52156E95E0015B981 /* MainScreenViewModel.swift */; };
+		3EF7FBFC2156E98D0015B981 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBFA2156E98D0015B981 /* AboutViewController.swift */; };
+		3EF7FBFD2156E98D0015B981 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF7FBFB2156E98D0015B981 /* About.storyboard */; };
 		B19E3744214985EF007C7B7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E3743214985EF007C7B7A /* AppDelegate.swift */; };
-		B19E3746214985EF007C7B7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E3745214985EF007C7B7A /* ViewController.swift */; };
-		B19E3749214985EF007C7B7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B19E3747214985EF007C7B7A /* Main.storyboard */; };
 		B19E374B214985F1007C7B7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19E374A214985F1007C7B7A /* Assets.xcassets */; };
 		B19E374E214985F1007C7B7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B19E374C214985F1007C7B7A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EF7FBEC2156E9480015B981 /* MainScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
+		3EF7FBED2156E9480015B981 /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		3EF7FBF02156E9510015B981 /* CorneredImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorneredImageView.swift; sourceTree = "<group>"; };
+		3EF7FBF12156E9510015B981 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3EF7FBF42156E95A0015B981 /* MainScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenProtocols.swift; sourceTree = "<group>"; };
+		3EF7FBF52156E95E0015B981 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		3EF7FBFA2156E98D0015B981 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		3EF7FBFB2156E98D0015B981 /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		502C0D47CEC996421E4AA266 /* Pods-Pureco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pureco.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pureco/Pods-Pureco.release.xcconfig"; sourceTree = "<group>"; };
 		762D75C6DBC9F3627A207178 /* Pods_Pureco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pureco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19E3740214985EF007C7B7A /* Pureco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pureco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19E3743214985EF007C7B7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B19E3745214985EF007C7B7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B19E3748214985EF007C7B7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B19E374A214985F1007C7B7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B19E374D214985F1007C7B7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B19E374F214985F1007C7B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +52,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EF7FBE52156E8EA0015B981 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3EF7FBF82156E97E0015B981 /* About */,
+				3EF7FBE62156E91C0015B981 /* MainScreen */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3EF7FBE62156E91C0015B981 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3EF7FBEA2156E92F0015B981 /* ViewModel */,
+				3EF7FBE92156E92A0015B981 /* Protocols */,
+				3EF7FBE82156E9250015B981 /* Presenter */,
+				3EF7FBE72156E9210015B981 /* View */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		3EF7FBE72156E9210015B981 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3EF7FBEB2156E9350015B981 /* CustomViews */,
+				3EF7FBEC2156E9480015B981 /* MainScreen.storyboard */,
+				3EF7FBED2156E9480015B981 /* MainScreenViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EF7FBE82156E9250015B981 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3EF7FBE92156E92A0015B981 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3EF7FBF42156E95A0015B981 /* MainScreenProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3EF7FBEA2156E92F0015B981 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3EF7FBF52156E95E0015B981 /* MainScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3EF7FBEB2156E9350015B981 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				3EF7FBF02156E9510015B981 /* CorneredImageView.swift */,
+				3EF7FBF12156E9510015B981 /* CardView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		3EF7FBF82156E97E0015B981 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				3EF7FBF92156E9850015B981 /* View */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		3EF7FBF92156E9850015B981 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3EF7FBFB2156E98D0015B981 /* About.storyboard */,
+				3EF7FBFA2156E98D0015B981 /* AboutViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		92C3ECFA5194084200875BF2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,8 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				B19E3743214985EF007C7B7A /* AppDelegate.swift */,
-				B19E3745214985EF007C7B7A /* ViewController.swift */,
-				B19E3747214985EF007C7B7A /* Main.storyboard */,
+				3EF7FBE52156E8EA0015B981 /* Modules */,
 				B19E374A214985F1007C7B7A /* Assets.xcassets */,
 				B19E374C214985F1007C7B7A /* LaunchScreen.storyboard */,
 				B19E374F214985F1007C7B7A /* Info.plist */,
@@ -149,8 +239,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B19E374E214985F1007C7B7A /* LaunchScreen.storyboard in Resources */,
+				3EF7FBFD2156E98D0015B981 /* About.storyboard in Resources */,
+				3EF7FBEE2156E9480015B981 /* MainScreen.storyboard in Resources */,
 				B19E374B214985F1007C7B7A /* Assets.xcassets in Resources */,
-				B19E3749214985EF007C7B7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,22 +297,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B19E3746214985EF007C7B7A /* ViewController.swift in Sources */,
+				3EF7FBF72156E9660015B981 /* MainScreenViewModel.swift in Sources */,
 				B19E3744214985EF007C7B7A /* AppDelegate.swift in Sources */,
+				3EF7FBF22156E9510015B981 /* CorneredImageView.swift in Sources */,
+				3EF7FBEF2156E9480015B981 /* MainScreenViewController.swift in Sources */,
+				3EF7FBF62156E9640015B981 /* MainScreenProtocols.swift in Sources */,
+				3EF7FBFC2156E98D0015B981 /* AboutViewController.swift in Sources */,
+				3EF7FBF32156E9510015B981 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B19E3747214985EF007C7B7A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B19E3748214985EF007C7B7A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B19E374C214985F1007C7B7A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -353,9 +441,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 32P3VH37WD;
+				DEVELOPMENT_TEAM = 2ECVV26Q6C;
 				INFOPLIST_FILE = Pureco/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Enactus.iOS.Pureco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -369,9 +461,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 32P3VH37WD;
+				DEVELOPMENT_TEAM = 2ECVV26Q6C;
 				INFOPLIST_FILE = Pureco/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Enactus.iOS.Pureco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
