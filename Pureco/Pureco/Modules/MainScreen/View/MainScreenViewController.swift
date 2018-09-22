@@ -9,12 +9,25 @@
 import UIKit
 
 class MainScreenViewController: UIViewController {
+    
+    var presenter: MainScreenPresenterProtocol?
+    var viewModel: MainScreenViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.presenter = MainScreenPresenter(view: self)
+        presenter?.didLoad()
     }
-    
     
 }
 
+extension MainScreenViewController: MainScreenViewProtocol {
+    
+    func startLoading() {
+        self.view.isUserInteractionEnabled = false
+    }
+    
+    func stopLoading() {
+        self.view.isUserInteractionEnabled = true
+    }
+}

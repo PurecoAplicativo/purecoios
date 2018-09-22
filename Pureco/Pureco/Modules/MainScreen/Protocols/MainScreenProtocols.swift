@@ -10,20 +10,16 @@ import Foundation
 
 protocol MainScreenViewProtocol {
     
-    // Cell controlling
-    func didSelectScheduleCleaning()
-    func didSelectPreviousCleanings()
-    func didSelectKnowMore()
-    func didSelectLogIn()
+    var presenter: MainScreenPresenterProtocol? { get }
+    var viewModel: MainScreenViewModel? { get set }
+    
+    func startLoading()
+    func stopLoading()
     
 }
 
 protocol MainScreenPresenterProtocol {
     
-    // Cell controlling
-    func didSelectScheduleCleaning()
-    func didSelectPreviousCleanings()
-    func didSelectKnowMore()
-    func didSelectLogIn()
-    
+    var view: MainScreenViewProtocol? { get }
+    func didLoad()
 }
