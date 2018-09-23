@@ -27,7 +27,7 @@ class LastCleaningServiceMock {
             semaphore.signal()
         }
         semaphore.wait()
-        return LastCleaningsViewModel(old: [Cleaning(date: Date(), address: "Rua Doutor Boareto de Camargo, 177 - Campinas Barão Geraldo", cleaner: "Josefina")],
+        return LastCleaningsViewModel(old: [Cleaning(date: Date(), address: "Rua Doutor Boareto de Camargo, 177 - Campinas Barão Geraldo", cleaner: "Josefina"), Cleaning(date: Date(), address: "Rua Doutor Boareto de Camargo, 177 - Campinas Barão Geraldo", cleaner: "Josefina"), Cleaning(date: Date(), address: "Rua Doutor Boareto de Camargo, 177 - Campinas Barão Geraldo", cleaner: "Josefina")],
                                       next: [Cleaning(date: Date(), address: "Rua Doutor Boareto de Camargo, 177 - Campinas Barão Geraldo", cleaner: "Josefina")])
     }
 }
