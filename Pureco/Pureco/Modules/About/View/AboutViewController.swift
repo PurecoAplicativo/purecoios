@@ -10,6 +10,15 @@ import UIKit
 
 class AboutViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var contentView: UIView!
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        scrollView.contentSize = CGSize(width: contentView.frame.size.width,
+                                        height: contentView.frame.size.height + 1000)
+    }
+    
     @IBAction func didPressCloseButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }

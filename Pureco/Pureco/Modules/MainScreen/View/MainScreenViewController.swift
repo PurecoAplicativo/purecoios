@@ -53,7 +53,6 @@ extension MainScreenViewController: MainScreenViewProtocol {
     func stopLoading() {
         self.view.isUserInteractionEnabled = true
         loadingScreen?.removeFromSuperview()
-        showWarning(title: "Finished Loading", twoLined: false)
     }
     
     func setup() {

@@ -43,7 +43,9 @@ class LastCleaningsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return section == 0 ? "AGENDADOS" : "ANTIGOS"
+        return section == 0 ?
+            (viewModel?.nextCleanings.count ?? 0 == 0 ? "" : "AGENDADOS") :
+            (viewModel?.oldCleanings.count ?? 0 == 0 ? "" : "ANTIGOS")
     }
 
 }

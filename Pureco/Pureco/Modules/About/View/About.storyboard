@@ -185,6 +185,10 @@ Dessa forma alcançaremos 2 objetivos:
                         <viewLayoutGuide key="safeArea" id="szc-tQ-owX"/>
                     </view>
                     <size key="freeformSize" width="375" height="1400"/>
+                    <connections>
+                        <outlet property="contentView" destination="eGn-RD-InB" id="EmA-Xq-ofh"/>
+                        <outlet property="scrollView" destination="uaQ-mg-gAe" id="IUn-tK-1ms"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="caN-eJ-nCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
