@@ -13,6 +13,7 @@
 		3E4794D62157056E005FF170 /* Cleaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794D52157056E005FF170 /* Cleaning.swift */; };
 		3E4794D821570645005FF170 /* DateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794D721570645005FF170 /* DateFormatters.swift */; };
 		3E4794DB21570A89005FF170 /* ShowFullScreenLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794DA21570A89005FF170 /* ShowFullScreenLoading.swift */; };
+		3E4794DD21570F0B005FF170 /* PurecoLoaderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794DC21570F0B005FF170 /* PurecoLoaderImageView.swift */; };
 		3EF7FBEE2156E9480015B981 /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF7FBEC2156E9480015B981 /* MainScreen.storyboard */; };
 		3EF7FBEF2156E9480015B981 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBED2156E9480015B981 /* MainScreenViewController.swift */; };
 		3EF7FBF22156E9510015B981 /* CorneredImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBF02156E9510015B981 /* CorneredImageView.swift */; };
@@ -37,6 +38,7 @@
 		3E4794D52157056E005FF170 /* Cleaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cleaning.swift; sourceTree = "<group>"; };
 		3E4794D721570645005FF170 /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatters.swift; sourceTree = "<group>"; };
 		3E4794DA21570A89005FF170 /* ShowFullScreenLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFullScreenLoading.swift; sourceTree = "<group>"; };
+		3E4794DC21570F0B005FF170 /* PurecoLoaderImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurecoLoaderImageView.swift; sourceTree = "<group>"; };
 		3EF7FBEC2156E9480015B981 /* MainScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
 		3EF7FBED2156E9480015B981 /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		3EF7FBF02156E9510015B981 /* CorneredImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorneredImageView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			children = (
 				3EF7FBFF2156EACA0015B981 /* ColorConstants.swift */,
 				3E4794D721570645005FF170 /* DateFormatters.swift */,
+				3E4794DC21570F0B005FF170 /* PurecoLoaderImageView.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				3EF7FC062156F86A0015B981 /* ServiceProtocols.swift in Sources */,
 				3EF7FBEF2156E9480015B981 /* MainScreenViewController.swift in Sources */,
 				3EF7FBF62156E9640015B981 /* MainScreenProtocols.swift in Sources */,
+				3E4794DD21570F0B005FF170 /* PurecoLoaderImageView.swift in Sources */,
 				3E4794DB21570A89005FF170 /* ShowFullScreenLoading.swift in Sources */,
 				3EF7FC092156FB3A0015B981 /* MainScreenServiceMock.swift in Sources */,
 				3EF7FC0D2156FD510015B981 /* ScheduleCleaningCard.swift in Sources */,
