@@ -9,5 +9,9 @@
 import Foundation
 
 protocol UserServiceProtocol {
-    func getMainScreenInfo(completion: @escaping (_ viewModel: MainScreenViewModel, _ error: Error?) -> Void)
+    static func getMainScreenInfo(completion: @escaping (_ viewModel: MainScreenViewModel?, _ error: Error?) -> Void)
+}
+
+protocol LastSchedulesProtocol {
+    static func getLastCleanings(completion: @escaping (_ viewModel: LastCleaningsViewModel?, _ error: Error?) -> Void)
 }

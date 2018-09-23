@@ -10,17 +10,15 @@ import Foundation
 
 class MainScreenPresenter: MainScreenPresenterProtocol {
     
-    var view: MainScreenViewProtocol?
-    var service: UserServiceProtocol?
+    weak var view: MainScreenViewProtocol?
     
     init(view: MainScreenViewProtocol) {
         self.view = view
-        self.service = MainScreenServiceMock()
     }
     
     func didLoad() {
         view?.startLoading()
-        service?.getMainScreenInfo(completion: { (model, error)  in
+        Services.getMainScreenInfo(completion: { (model, error)  in
             if let error = error {
                 print(error.localizedDescription)
             }

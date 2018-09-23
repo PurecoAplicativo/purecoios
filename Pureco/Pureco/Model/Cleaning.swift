@@ -12,10 +12,16 @@ class Cleaning {
     
     let date: Date
     let address: String
+    let cleaner: String?
     
-    init(date: Date, address: String) {
+    var dateString: String {
+        return DateFormatter.commonDateFormat.string(from: date)
+    }
+    
+    init(date: Date, address: String, cleaner: String) {
         self.date = date
         self.address = address
+        self.cleaner = cleaner
     }
     
 }

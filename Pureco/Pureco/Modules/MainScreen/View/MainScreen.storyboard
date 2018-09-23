@@ -133,9 +133,16 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nq-76-6TJ">
+                                                        <rect key="frame" x="-0.5" y="-0.5" width="337.5" height="143.5"/>
+                                                        <connections>
+                                                            <segue destination="a5T-ji-9jH" kind="show" identifier="showLastCleaningsSegue" id="D5X-eU-g1w"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstItem="5nq-76-6TJ" firstAttribute="width" secondItem="zgD-qA-bBs" secondAttribute="width" id="1ww-ef-SA7"/>
                                                     <constraint firstItem="2Xb-Am-Td6" firstAttribute="top" secondItem="wYz-R1-bRv" secondAttribute="bottom" constant="2.5" id="5fx-k6-zMm"/>
                                                     <constraint firstItem="2Xb-Am-Td6" firstAttribute="leading" secondItem="zgD-qA-bBs" secondAttribute="leading" constant="10" id="FLz-A3-NMr"/>
                                                     <constraint firstItem="wYz-R1-bRv" firstAttribute="leading" secondItem="zgD-qA-bBs" secondAttribute="leading" constant="10" id="LTF-2A-IY5"/>
@@ -146,8 +153,11 @@
                                                     <constraint firstItem="ZWH-Mz-VEL" firstAttribute="leading" secondItem="zgD-qA-bBs" secondAttribute="leading" constant="10" id="TB8-oV-KxD"/>
                                                     <constraint firstItem="6UC-GM-9KL" firstAttribute="centerX" secondItem="zgD-qA-bBs" secondAttribute="centerX" id="aJH-hs-pyx"/>
                                                     <constraint firstItem="6UC-GM-9KL" firstAttribute="centerY" secondItem="zgD-qA-bBs" secondAttribute="centerY" id="arv-Z7-s0z"/>
+                                                    <constraint firstItem="5nq-76-6TJ" firstAttribute="centerY" secondItem="zgD-qA-bBs" secondAttribute="centerY" id="cjy-lJ-h7Y"/>
+                                                    <constraint firstItem="5nq-76-6TJ" firstAttribute="centerX" secondItem="zgD-qA-bBs" secondAttribute="centerX" id="pyp-an-Q8V"/>
                                                     <constraint firstItem="ZWH-Mz-VEL" firstAttribute="top" secondItem="zgD-qA-bBs" secondAttribute="top" constant="15" id="q82-wF-eJZ"/>
                                                     <constraint firstItem="wYz-R1-bRv" firstAttribute="top" secondItem="ZWH-Mz-VEL" secondAttribute="bottom" constant="16.5" id="qtu-oP-34L"/>
+                                                    <constraint firstItem="5nq-76-6TJ" firstAttribute="height" secondItem="zgD-qA-bBs" secondAttribute="height" id="rjB-3A-y26"/>
                                                 </constraints>
                                                 <connections>
                                                     <outlet property="addressLabel" destination="m3j-Yr-tJa" id="MZs-zF-3hT"/>
@@ -277,7 +287,15 @@
                 <viewControllerPlaceholder storyboardName="About" id="0HQ-UA-vNO" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4KB-LX-K89" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1247" y="131"/>
+            <point key="canvasLocation" x="1358" y="131"/>
+        </scene>
+        <!--LastCleanings-->
+        <scene sceneID="Vh8-mG-paP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LastCleanings" id="a5T-ji-9jH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLJ-Qe-urz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1397" y="175"/>
         </scene>
     </scenes>
     <resources>

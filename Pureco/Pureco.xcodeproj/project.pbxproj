@@ -14,6 +14,14 @@
 		3E4794D821570645005FF170 /* DateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794D721570645005FF170 /* DateFormatters.swift */; };
 		3E4794DB21570A89005FF170 /* ShowFullScreenLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794DA21570A89005FF170 /* ShowFullScreenLoading.swift */; };
 		3E4794DD21570F0B005FF170 /* PurecoLoaderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794DC21570F0B005FF170 /* PurecoLoaderImageView.swift */; };
+		3E4794E42157DA8F005FF170 /* LastCleanings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4794E32157DA8F005FF170 /* LastCleanings.storyboard */; };
+		3E4794E72157DB40005FF170 /* LastCleaningsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794E62157DB40005FF170 /* LastCleaningsTableViewCell.swift */; };
+		3E4794E92157DC2D005FF170 /* LastCleaningsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794E82157DC2D005FF170 /* LastCleaningsTableViewController.swift */; };
+		3E4794EB2157DCAD005FF170 /* LastCleaningsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794EA2157DCAD005FF170 /* LastCleaningsViewModel.swift */; };
+		3E4794EE2157DD2F005FF170 /* LastCleaningsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794ED2157DD2F005FF170 /* LastCleaningsProtocols.swift */; };
+		3E4794F02157DD66005FF170 /* LastCleaningPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794EF2157DD66005FF170 /* LastCleaningPresenter.swift */; };
+		3E4794F42157DF11005FF170 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4794F32157DF11005FF170 /* Navigation.storyboard */; };
+		3E4794F62157DFA4005FF170 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794F52157DFA4005FF170 /* Services.swift */; };
 		3EF7FBEE2156E9480015B981 /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF7FBEC2156E9480015B981 /* MainScreen.storyboard */; };
 		3EF7FBEF2156E9480015B981 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBED2156E9480015B981 /* MainScreenViewController.swift */; };
 		3EF7FBF22156E9510015B981 /* CorneredImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBF02156E9510015B981 /* CorneredImageView.swift */; };
@@ -39,6 +47,14 @@
 		3E4794D721570645005FF170 /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatters.swift; sourceTree = "<group>"; };
 		3E4794DA21570A89005FF170 /* ShowFullScreenLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFullScreenLoading.swift; sourceTree = "<group>"; };
 		3E4794DC21570F0B005FF170 /* PurecoLoaderImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurecoLoaderImageView.swift; sourceTree = "<group>"; };
+		3E4794E32157DA8F005FF170 /* LastCleanings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LastCleanings.storyboard; sourceTree = "<group>"; };
+		3E4794E62157DB40005FF170 /* LastCleaningsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCleaningsTableViewCell.swift; sourceTree = "<group>"; };
+		3E4794E82157DC2D005FF170 /* LastCleaningsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCleaningsTableViewController.swift; sourceTree = "<group>"; };
+		3E4794EA2157DCAD005FF170 /* LastCleaningsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCleaningsViewModel.swift; sourceTree = "<group>"; };
+		3E4794ED2157DD2F005FF170 /* LastCleaningsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCleaningsProtocols.swift; sourceTree = "<group>"; };
+		3E4794EF2157DD66005FF170 /* LastCleaningPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCleaningPresenter.swift; sourceTree = "<group>"; };
+		3E4794F32157DF11005FF170 /* Navigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
+		3E4794F52157DFA4005FF170 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		3EF7FBEC2156E9480015B981 /* MainScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
 		3EF7FBED2156E9480015B981 /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		3EF7FBF02156E9510015B981 /* CorneredImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorneredImageView.swift; sourceTree = "<group>"; };
@@ -99,10 +115,89 @@
 			path = UIViewController;
 			sourceTree = "<group>";
 		};
+		3E4794DE2157DA5B005FF170 /* LastCleanings */ = {
+			isa = PBXGroup;
+			children = (
+				3E4794E22157DA73005FF170 /* ViewModel */,
+				3E4794E12157DA6E005FF170 /* Protocols */,
+				3E4794E02157DA69005FF170 /* Presenter */,
+				3E4794DF2157DA65005FF170 /* View */,
+			);
+			path = LastCleanings;
+			sourceTree = "<group>";
+		};
+		3E4794DF2157DA65005FF170 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E4794E52157DB2D005FF170 /* CustomCells */,
+				3E4794E32157DA8F005FF170 /* LastCleanings.storyboard */,
+				3E4794E82157DC2D005FF170 /* LastCleaningsTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E4794E02157DA69005FF170 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3E4794EF2157DD66005FF170 /* LastCleaningPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3E4794E12157DA6E005FF170 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3E4794ED2157DD2F005FF170 /* LastCleaningsProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3E4794E22157DA73005FF170 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3E4794EA2157DCAD005FF170 /* LastCleaningsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3E4794E52157DB2D005FF170 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				3E4794E62157DB40005FF170 /* LastCleaningsTableViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		3E4794EC2157DCE4005FF170 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3E4794F52157DFA4005FF170 /* Services.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3E4794F12157DF01005FF170 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				3E4794F22157DF07005FF170 /* View */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		3E4794F22157DF07005FF170 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E4794F32157DF11005FF170 /* Navigation.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3EF7FBE52156E8EA0015B981 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3E4794F12157DF01005FF170 /* Navigation */,
 				3EF7FBF82156E97E0015B981 /* About */,
+				3E4794DE2157DA5B005FF170 /* LastCleanings */,
 				3EF7FBE62156E91C0015B981 /* MainScreen */,
 			);
 			path = Modules;
@@ -195,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				3EF7FC072156FB2C0015B981 /* Mock */,
+				3E4794EC2157DCE4005FF170 /* Services */,
 				3EF7FC042156F85E0015B981 /* Protocols */,
 			);
 			path = Services;
@@ -327,8 +423,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E4794F42157DF11005FF170 /* Navigation.storyboard in Resources */,
 				B19E374E214985F1007C7B7A /* LaunchScreen.storyboard in Resources */,
 				3EF7FBFD2156E98D0015B981 /* About.storyboard in Resources */,
+				3E4794E42157DA8F005FF170 /* LastCleanings.storyboard in Resources */,
 				3EF7FBEE2156E9480015B981 /* MainScreen.storyboard in Resources */,
 				B19E374B214985F1007C7B7A /* Assets.xcassets in Resources */,
 			);
@@ -386,7 +484,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E4794E92157DC2D005FF170 /* LastCleaningsTableViewController.swift in Sources */,
 				3EF7FBF72156E9660015B981 /* MainScreenViewModel.swift in Sources */,
+				3E4794EE2157DD2F005FF170 /* LastCleaningsProtocols.swift in Sources */,
 				3E4794D021570043005FF170 /* PreviousCleaningCard.swift in Sources */,
 				B19E3744214985EF007C7B7A /* AppDelegate.swift in Sources */,
 				3EF7FC022156F65A0015B981 /* MainScreenPresenter.swift in Sources */,
@@ -395,11 +495,15 @@
 				3E4794D62157056E005FF170 /* Cleaning.swift in Sources */,
 				3EF7FC002156EACA0015B981 /* ColorConstants.swift in Sources */,
 				3EF7FC062156F86A0015B981 /* ServiceProtocols.swift in Sources */,
+				3E4794F02157DD66005FF170 /* LastCleaningPresenter.swift in Sources */,
 				3EF7FBEF2156E9480015B981 /* MainScreenViewController.swift in Sources */,
+				3E4794F62157DFA4005FF170 /* Services.swift in Sources */,
 				3EF7FBF62156E9640015B981 /* MainScreenProtocols.swift in Sources */,
 				3E4794DD21570F0B005FF170 /* PurecoLoaderImageView.swift in Sources */,
+				3E4794EB2157DCAD005FF170 /* LastCleaningsViewModel.swift in Sources */,
 				3E4794DB21570A89005FF170 /* ShowFullScreenLoading.swift in Sources */,
 				3EF7FC092156FB3A0015B981 /* MainScreenServiceMock.swift in Sources */,
+				3E4794E72157DB40005FF170 /* LastCleaningsTableViewCell.swift in Sources */,
 				3EF7FC0D2156FD510015B981 /* ScheduleCleaningCard.swift in Sources */,
 				3EF7FBFC2156E98D0015B981 /* AboutViewController.swift in Sources */,
 				3E4794D3215700E3005FF170 /* ShowWarning.swift in Sources */,

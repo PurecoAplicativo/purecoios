@@ -8,11 +8,25 @@
 
 import Foundation
 
-class MainScreenServiceMock: UserServiceProtocol {
+class MainScreenServiceMock {
     
-    func getMainScreenInfo(completion: @escaping (MainScreenViewModel, Error?) -> Void) {
+    func getMainScreenInfo() throws -> MainScreenViewModel {
+        let semaphore  = DispatchSemaphore(value: 0)
         DispatchQueue.global().asyncAfter(deadline: .now() + 3) {
-            completion( MainScreenViewModel(isLoggedIn: false, lastSchedules: [Cleaning(date: Date(), address: "Rua Doutor Boareto de Camargo, 177 - Campinas Barão Geraldo")]), nil )
+            semaphore.signal()
         }
+        semaphore.wait()
+        return MainScreenViewModel(isLoggedIn: false, lastSchedules: [Cleaning(date: Date(), address: "Rua Doutor Boareto de Camargo, 177 - Campinas Barão Geraldo", cleaner: "Josefina")])
+    }
+}
+
+class LastCleaningServiceMock {
+    func getLastCleanings() throws -> LastCleaningsViewModel {
+        let semaphore = DispatchSemaphore(value: 0)
+        DispatchQueue.global().asyncAfter(deadline: .now() + 3) {
+            semaphore.signal()
+        }
+        semaphore.wait()
+        return LastCleaningsViewModel(old: [], next: [])
     }
 }

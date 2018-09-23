@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol MainScreenViewProtocol {
+protocol MainScreenViewProtocol: NSObjectProtocol {
     
     var presenter: MainScreenPresenterProtocol? { get }
     var viewModel: MainScreenViewModel? { get set }
@@ -19,7 +19,7 @@ protocol MainScreenViewProtocol {
     
 }
 
-protocol MainScreenPresenterProtocol {
+protocol MainScreenPresenterProtocol: class {
     
     var view: MainScreenViewProtocol? { get }
     func didLoad()
