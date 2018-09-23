@@ -8,6 +8,13 @@
 
 import Foundation
 
+class UserMock {
+    
+    func getUser() -> User {
+        return User(name: "Gesonel", userId: "mestre_dos_disfarces", imageURL: URL(string: "https://www.ienglishstatus.com/wp-content/uploads/2018/04/Sad-Profile-Pic-for-Whatsapp.png"))
+    }
+}
+
 class MainScreenServiceMock {
     
     func getMainScreenInfo() throws -> MainScreenViewModel {
@@ -16,7 +23,7 @@ class MainScreenServiceMock {
             semaphore.signal()
         }
         semaphore.wait()
-        return MainScreenViewModel(isLoggedIn: false, lastSchedules: [Cleaning(date: Date(), address: "Rua Doutor Boareto de Camargo, 177 - Campinas Barão Geraldo", cleaner: "Josefina")])
+        return MainScreenViewModel(lastSchedules: [Cleaning(date: Date(), address: "Rua Doutor Boareto de Camargo, 177 - Campinas Barão Geraldo", cleaner: "Josefina")])
     }
 }
 

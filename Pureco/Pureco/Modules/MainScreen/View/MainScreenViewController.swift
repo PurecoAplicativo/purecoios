@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MainScreenViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var schedulingCard: ScheduleCleaningCard!
     @IBOutlet weak var lasrCleaningsCard: PreviousCleaningCard!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var profileImage: UIImageView!
     
     // MARK: - Variables
     
@@ -56,7 +60,17 @@ extension MainScreenViewController: MainScreenViewProtocol {
     }
     
     func setup() {
-        (viewModel?.isLoggedIn)! ? schedulingCard.setValid() : schedulingCard.setInvalid()
+        if viewModel?.isLoggedIn == false {
+            schedulingCard.setInvalid()
+            self.profileImage.image = #imageLiteral(resourceName: "photoPlaceholder")
+            nameLabel.text = "Log In"
+            self.loginButton.setTitle("Entre para poder fazer agendamentos", for: .normal)
+        } else {
+            schedulingCard.setValid()
+            self.nameLabel.text = CurrentUser.user?.name
+            self.profileImage.kf.setImage(with: CurrentUser.user?.imageURL)
+            self.loginButton.setTitle("Editar perfil", for: .normal)
+        }
         lasrCleaningsCard.setup(cleaning: viewModel?.lastSchedules?.first)
     }
 }

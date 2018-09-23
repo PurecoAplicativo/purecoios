@@ -32,7 +32,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photoPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="Ray-Su-14r">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photoPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="Ray-Su-14r" customClass="RoundImageView" customModule="Pureco" customModuleProvider="target">
                                 <rect key="frame" x="10" y="25" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ray-Su-14r" secondAttribute="height" multiplier="1:1" id="pVv-d4-jt3"/>
@@ -274,6 +274,9 @@
                     </view>
                     <connections>
                         <outlet property="lasrCleaningsCard" destination="zgD-qA-bBs" id="XAW-lM-cBT"/>
+                        <outlet property="loginButton" destination="VY3-vU-la0" id="2CU-df-rPN"/>
+                        <outlet property="nameLabel" destination="st8-MO-ImO" id="PlM-te-Be2"/>
+                        <outlet property="profileImage" destination="Ray-Su-14r" id="nbM-eP-IZy"/>
                         <outlet property="schedulingCard" destination="d4V-Ks-EXC" id="i82-qg-5hn"/>
                     </connections>
                 </viewController>

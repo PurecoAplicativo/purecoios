@@ -22,9 +22,10 @@
 		3E4794F02157DD66005FF170 /* LastCleaningPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794EF2157DD66005FF170 /* LastCleaningPresenter.swift */; };
 		3E4794F42157DF11005FF170 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4794F32157DF11005FF170 /* Navigation.storyboard */; };
 		3E4794F62157DFA4005FF170 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794F52157DFA4005FF170 /* Services.swift */; };
+		3E47950921580E7F005FF170 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E47950821580E7F005FF170 /* User.swift */; };
 		3EF7FBEE2156E9480015B981 /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF7FBEC2156E9480015B981 /* MainScreen.storyboard */; };
 		3EF7FBEF2156E9480015B981 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBED2156E9480015B981 /* MainScreenViewController.swift */; };
-		3EF7FBF22156E9510015B981 /* CorneredImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBF02156E9510015B981 /* CorneredImageView.swift */; };
+		3EF7FBF22156E9510015B981 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBF02156E9510015B981 /* RoundImageView.swift */; };
 		3EF7FBF32156E9510015B981 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBF12156E9510015B981 /* CardView.swift */; };
 		3EF7FBF62156E9640015B981 /* MainScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBF42156E95A0015B981 /* MainScreenProtocols.swift */; };
 		3EF7FBF72156E9660015B981 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBF52156E95E0015B981 /* MainScreenViewModel.swift */; };
@@ -55,9 +56,10 @@
 		3E4794EF2157DD66005FF170 /* LastCleaningPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCleaningPresenter.swift; sourceTree = "<group>"; };
 		3E4794F32157DF11005FF170 /* Navigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
 		3E4794F52157DFA4005FF170 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		3E47950821580E7F005FF170 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3EF7FBEC2156E9480015B981 /* MainScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
 		3EF7FBED2156E9480015B981 /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
-		3EF7FBF02156E9510015B981 /* CorneredImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorneredImageView.swift; sourceTree = "<group>"; };
+		3EF7FBF02156E9510015B981 /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		3EF7FBF12156E9510015B981 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3EF7FBF42156E95A0015B981 /* MainScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenProtocols.swift; sourceTree = "<group>"; };
 		3EF7FBF52156E95E0015B981 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				3E4794D52157056E005FF170 /* Cleaning.swift */,
+				3E47950821580E7F005FF170 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,7 +254,7 @@
 		3EF7FBEB2156E9350015B981 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				3EF7FBF02156E9510015B981 /* CorneredImageView.swift */,
+				3EF7FBF02156E9510015B981 /* RoundImageView.swift */,
 				3EF7FBF12156E9510015B981 /* CardView.swift */,
 				3EF7FC0C2156FD510015B981 /* ScheduleCleaningCard.swift */,
 				3E4794CF21570043005FF170 /* PreviousCleaningCard.swift */,
@@ -462,6 +465,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pureco/Pods-Pureco-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -469,6 +473,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -487,11 +492,12 @@
 				3E4794E92157DC2D005FF170 /* LastCleaningsTableViewController.swift in Sources */,
 				3EF7FBF72156E9660015B981 /* MainScreenViewModel.swift in Sources */,
 				3E4794EE2157DD2F005FF170 /* LastCleaningsProtocols.swift in Sources */,
+				3E47950921580E7F005FF170 /* User.swift in Sources */,
 				3E4794D021570043005FF170 /* PreviousCleaningCard.swift in Sources */,
 				B19E3744214985EF007C7B7A /* AppDelegate.swift in Sources */,
 				3EF7FC022156F65A0015B981 /* MainScreenPresenter.swift in Sources */,
 				3E4794D821570645005FF170 /* DateFormatters.swift in Sources */,
-				3EF7FBF22156E9510015B981 /* CorneredImageView.swift in Sources */,
+				3EF7FBF22156E9510015B981 /* RoundImageView.swift in Sources */,
 				3E4794D62157056E005FF170 /* Cleaning.swift in Sources */,
 				3EF7FC002156EACA0015B981 /* ColorConstants.swift in Sources */,
 				3EF7FC062156F86A0015B981 /* ServiceProtocols.swift in Sources */,
