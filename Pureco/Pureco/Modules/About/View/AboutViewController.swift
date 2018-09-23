@@ -8,6 +8,8 @@
 
 import UIKit
 
+let enactusURL = URL(string: "https://www.enactusunicamp.org")
+
 class AboutViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
@@ -16,10 +18,16 @@ class AboutViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         scrollView.contentSize = CGSize(width: contentView.frame.size.width,
-                                        height: contentView.frame.size.height + 1000)
+                                        height: 2800)
     }
     
     @IBAction func didPressCloseButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func didPressEnactus(_ sender: Any) {
+        print("pressed")
+        guard let url = enactusURL else { return }
+        UIApplication.shared.open(url)
     }
 }
