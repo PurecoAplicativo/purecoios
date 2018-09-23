@@ -28,6 +28,7 @@ class MainScreenPresenter: MainScreenPresenterProtocol {
                 self.view?.setup()
             }
         })
+        Services.updateUser()
     }
     
 }

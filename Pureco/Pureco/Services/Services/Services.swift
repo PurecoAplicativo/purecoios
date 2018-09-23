@@ -13,7 +13,7 @@ class Services {
     static var mainScreenMechanism = MainScreenServiceMock()
     static var lastCleaningsMechanism = LastCleaningServiceMock()
     
-    static func getUser() {
+    static func updateUser() {
         DispatchQueue.global(qos: .background).async {
             CurrentUser.user = UserMock().getUser()
         }
@@ -23,7 +23,6 @@ class Services {
 
 extension Services: UserServiceProtocol {
     static func getMainScreenInfo(completion: @escaping (MainScreenViewModel?, Error?) -> Void) {
-        getUser()
         var model: MainScreenViewModel? = nil
         var requestError: Error? = nil
         DispatchQueue.global(qos: .background).async {
