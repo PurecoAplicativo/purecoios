@@ -16,7 +16,17 @@ class LastCleaningPresenter: LastCleaningPresenterProtocol {
     }
     
     func didLoad() {
-        //
+        view?.startLoading()
+        Services.getLastCleanings { (model, error) in
+            if error != nil {
+                print(error?.localizedDescription ?? "")
+            }
+            self.view?.viewModel = model
+            DispatchQueue.main.async {
+                self.view?.setup()
+                self.view?.stopLoading()
+            }
+        }
     }
     
 }

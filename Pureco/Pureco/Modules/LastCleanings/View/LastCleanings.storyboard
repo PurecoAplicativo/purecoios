@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Last Cleanings Table View Controller-->
+        <!--Limpezas Passadas-->
         <scene sceneID="Jgm-8L-FTk">
             <objects>
                 <tableViewController id="kgA-hc-KFP" customClass="LastCleaningsTableViewController" customModule="Pureco" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,12 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="e54-LO-EwD">
+                            <rect key="frame" x="0.0" y="188" width="375" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lastCleaningsCell" rowHeight="140" id="5Yv-e1-3C5" customClass="LastCleaningsTableViewCell" customModule="Pureco" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="140"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lastCleaningsCell" rowHeight="160" id="5Yv-e1-3C5" customClass="LastCleaningsTableViewCell" customModule="Pureco" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="160"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Yv-e1-3C5" id="qjx-q5-P3B">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="159.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uR1-md-G2p" customClass="CardView" customModule="Pureco" customModuleProvider="target">
@@ -66,8 +71,8 @@
                                     <constraints>
                                         <constraint firstItem="uR1-md-G2p" firstAttribute="leading" secondItem="qjx-q5-P3B" secondAttribute="leadingMargin" constant="15" id="URV-2V-7P7"/>
                                         <constraint firstItem="uR1-md-G2p" firstAttribute="top" secondItem="qjx-q5-P3B" secondAttribute="topMargin" constant="10" id="Zf4-En-Elk"/>
-                                        <constraint firstItem="uR1-md-G2p" firstAttribute="bottom" secondItem="qjx-q5-P3B" secondAttribute="bottomMargin" constant="10" id="sFt-kq-Adv"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="uR1-md-G2p" secondAttribute="trailing" constant="15" id="t5d-lQ-ULl"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="uR1-md-G2p" secondAttribute="bottom" constant="10" id="zD3-CG-Oej"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -82,6 +87,7 @@
                             <outlet property="delegate" destination="kgA-hc-KFP" id="tsQ-gw-t1a"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Limpezas Passadas" id="Av5-jq-zmk"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2rk-Mf-i3V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

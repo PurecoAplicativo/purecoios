@@ -33,7 +33,7 @@
 		3EF7FC002156EACA0015B981 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FBFF2156EACA0015B981 /* ColorConstants.swift */; };
 		3EF7FC022156F65A0015B981 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FC012156F65A0015B981 /* MainScreenPresenter.swift */; };
 		3EF7FC062156F86A0015B981 /* ServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FC052156F86A0015B981 /* ServiceProtocols.swift */; };
-		3EF7FC092156FB3A0015B981 /* MainScreenServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FC082156FB3A0015B981 /* MainScreenServiceMock.swift */; };
+		3EF7FC092156FB3A0015B981 /* MechanismsMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FC082156FB3A0015B981 /* MechanismsMocks.swift */; };
 		3EF7FC0D2156FD510015B981 /* ScheduleCleaningCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7FC0C2156FD510015B981 /* ScheduleCleaningCard.swift */; };
 		B19E3744214985EF007C7B7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E3743214985EF007C7B7A /* AppDelegate.swift */; };
 		B19E374B214985F1007C7B7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19E374A214985F1007C7B7A /* Assets.xcassets */; };
@@ -66,7 +66,7 @@
 		3EF7FBFF2156EACA0015B981 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		3EF7FC012156F65A0015B981 /* MainScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
 		3EF7FC052156F86A0015B981 /* ServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocols.swift; sourceTree = "<group>"; };
-		3EF7FC082156FB3A0015B981 /* MainScreenServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenServiceMock.swift; sourceTree = "<group>"; };
+		3EF7FC082156FB3A0015B981 /* MechanismsMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanismsMocks.swift; sourceTree = "<group>"; };
 		3EF7FC0C2156FD510015B981 /* ScheduleCleaningCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCleaningCard.swift; sourceTree = "<group>"; };
 		502C0D47CEC996421E4AA266 /* Pods-Pureco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pureco.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pureco/Pods-Pureco.release.xcconfig"; sourceTree = "<group>"; };
 		762D75C6DBC9F3627A207178 /* Pods_Pureco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pureco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,8 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				3E4794E52157DB2D005FF170 /* CustomCells */,
-				3E4794E32157DA8F005FF170 /* LastCleanings.storyboard */,
 				3E4794E82157DC2D005FF170 /* LastCleaningsTableViewController.swift */,
+				3E4794E32157DA8F005FF170 /* LastCleanings.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -307,7 +307,7 @@
 		3EF7FC072156FB2C0015B981 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				3EF7FC082156FB3A0015B981 /* MainScreenServiceMock.swift */,
+				3EF7FC082156FB3A0015B981 /* MechanismsMocks.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -502,7 +502,7 @@
 				3E4794DD21570F0B005FF170 /* PurecoLoaderImageView.swift in Sources */,
 				3E4794EB2157DCAD005FF170 /* LastCleaningsViewModel.swift in Sources */,
 				3E4794DB21570A89005FF170 /* ShowFullScreenLoading.swift in Sources */,
-				3EF7FC092156FB3A0015B981 /* MainScreenServiceMock.swift in Sources */,
+				3EF7FC092156FB3A0015B981 /* MechanismsMocks.swift in Sources */,
 				3E4794E72157DB40005FF170 /* LastCleaningsTableViewCell.swift in Sources */,
 				3EF7FC0D2156FD510015B981 /* ScheduleCleaningCard.swift in Sources */,
 				3EF7FBFC2156E98D0015B981 /* AboutViewController.swift in Sources */,
