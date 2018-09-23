@@ -19,12 +19,14 @@ extension Services: UserServiceProtocol {
     static func getMainScreenInfo(completion: @escaping (MainScreenViewModel?, Error?) -> Void) {
         var model: MainScreenViewModel? = nil
         var requestError: Error? = nil
-        do {
-            try model = mainScreenMechanism.getMainScreenInfo()
-        } catch {
-            requestError = error
+        DispatchQueue.global(qos: .background).async {
+            do {
+                try model = mainScreenMechanism.getMainScreenInfo()
+            } catch {
+                requestError = error
+            }
+            completion(model, requestError)
         }
-        completion(model, requestError)
     }
 }
 
@@ -32,11 +34,13 @@ extension Services: LastSchedulesProtocol {
     static func getLastCleanings(completion: @escaping (LastCleaningsViewModel?, Error?) -> Void) {
         var model: LastCleaningsViewModel? = nil
         var requestError: Error? = nil
-        do {
-            try model = lastCleaningsMechanism.getLastCleanings()
-        } catch {
-            requestError = error
+        DispatchQueue.global(qos: .background).async {
+            do {
+                try model = lastCleaningsMechanism.getLastCleanings()
+            } catch {
+                requestError = error
+            }
+            completion(model, requestError)
         }
-        completion(model, requestError)
     }
 }
