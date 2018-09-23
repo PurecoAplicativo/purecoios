@@ -37,6 +37,7 @@ extension MainScreenViewController: MainScreenViewProtocol {
     func startLoading() {
         self.view.isUserInteractionEnabled = false
         loadingScreen = self.showFullScreenLoading()
+        showWarning(title: "Carregando...")
     }
     
     func stopLoading() {

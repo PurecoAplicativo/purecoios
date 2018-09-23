@@ -38,10 +38,12 @@ extension UIViewController {
     }
     
     private func fadeOutComponent(_ view: UIView, timeInterval: Double = 2.0) {
-        UIView.animate(withDuration: timeInterval, animations: {
-            view.alpha = 0
-        }) { (_) in
-            view.removeFromSuperview()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            UIView.animate(withDuration: timeInterval, animations: {
+                view.alpha = 0
+            }) { (_) in
+                view.removeFromSuperview()
+            }
         }
     }
     
