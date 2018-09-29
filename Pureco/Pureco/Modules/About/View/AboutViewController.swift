@@ -9,6 +9,7 @@
 import UIKit
 
 let enactusURL = URL(string: "https://www.enactusunicamp.org")
+let facebookURL = URL(string: "https://www.facebook.com/purecolimpeza/")
 
 class AboutViewController: UIViewController {
 
@@ -26,8 +27,12 @@ class AboutViewController: UIViewController {
     }
     
     @IBAction func didPressEnactus(_ sender: Any) {
-        print("pressed")
         guard let url = enactusURL else { return }
+        UIApplication.shared.open(url)
+    }
+    
+    @IBAction func didPressFacebookButton(_ sender: Any) {
+        guard let url = facebookURL else { return }
         UIApplication.shared.open(url)
     }
 }

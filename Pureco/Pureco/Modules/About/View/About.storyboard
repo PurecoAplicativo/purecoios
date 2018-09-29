@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NWU-ez-zgo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NWU-ez-zgo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -95,7 +94,7 @@ Dessa forma alcançaremos 2 objetivos:
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IdeaIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gbv-mM-SdX">
-                                                <rect key="frame" x="62" y="944" width="250" height="150"/>
+                                                <rect key="frame" x="62.5" y="944" width="250" height="150"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="OI8-ca-nvY"/>
                                                     <constraint firstAttribute="width" constant="250" id="VtD-at-xVe"/>
@@ -122,7 +121,7 @@ A qualidade -&gt; ferecemos um serviço de alta qualidade, padronizado e com um 
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purecoLogoNormal" translatesAutoresizingMaskIntoConstraints="NO" id="vW9-Qg-GtS">
-                                                <rect key="frame" x="62" y="1525" width="250" height="150"/>
+                                                <rect key="frame" x="62.5" y="1525" width="250" height="150"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="6EP-LI-Ae6"/>
                                                     <constraint firstAttribute="height" constant="150" id="Cpp-US-QSx"/>
@@ -145,14 +144,14 @@ A qualidade -&gt; ferecemos um serviço de alta qualidade, padronizado e com um 
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="venus" translatesAutoresizingMaskIntoConstraints="NO" id="nYv-AT-1jr">
-                                                <rect key="frame" x="62" y="1913.5" width="250" height="150"/>
+                                                <rect key="frame" x="62.5" y="1913.5" width="250" height="150"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="cIx-sr-Vle"/>
                                                     <constraint firstAttribute="height" constant="150" id="e0i-gf-F0Z"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A ENACTUS" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fup-5P-50x">
-                                                <rect key="frame" x="17" y="2093.5" width="85.5" height="18"/>
+                                                <rect key="frame" x="17" y="2093.5" width="85" height="18"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="rnA-ms-Ios"/>
                                                 </constraints>
@@ -162,26 +161,20 @@ A qualidade -&gt; ferecemos um serviço de alta qualidade, padronizado e com um 
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfK-vJ-aIM">
                                                 <rect key="frame" x="17" y="2119.5" width="308" height="365.5"/>
-                                                <mutableString key="text">Enactus é uma organização mundial, m fins lucrativos, ue visa melhorar a qualidade de vida das pessoas menos favorecidas, mobilizando estudantes universitários, líderes empresariais e professores conselheiros comprometidos a usar o poder do empreendedorismo para transformar vidas.
+                                                <string key="text">Enactus é uma organização mundial, m fins lucrativos, ue visa melhorar a qualidade de vida das pessoas menos favorecidas, mobilizando estudantes universitários, líderes empresariais e professores conselheiros comprometidos a usar o poder do empreendedorismo para transformar vidas.
 Através desta plataforma, íderes estudantis crim e implementam projetos que beneficiam social, econômica e ambientalmente comunidades do mundo inteiro. O Pureco é um dos projetos ativos da Enactus Unicamp.
-Para conhecer mais sobre a nossa organização nossos outros projetos acesse nosso site:</mutableString>
+Para conhecer mais sobre a nossa organização nossos outros projetos acesse nosso site:</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EnactusUnicamp" translatesAutoresizingMaskIntoConstraints="NO" id="Oxf-gw-6wf">
-                                                <rect key="frame" x="62" y="2505" width="250" height="150"/>
+                                                <rect key="frame" x="62.5" y="2505" width="250" height="150"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="HQ3-9j-6Rq"/>
                                                     <constraint firstAttribute="width" constant="250" id="P2f-KV-5su"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdz-hH-zsY">
-                                                <rect key="frame" x="62" y="2505" width="250" height="150"/>
-                                                <connections>
-                                                    <action selector="didPressEnactus:" destination="NWU-ez-zgo" eventType="touchUpInside" id="2fP-km-6L5"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -189,7 +182,6 @@ Para conhecer mais sobre a nossa organização nossos outros projetos acesse nos
                                             <constraint firstItem="vW9-Qg-GtS" firstAttribute="centerX" secondItem="eGn-RD-InB" secondAttribute="centerX" id="5hq-wi-lYB"/>
                                             <constraint firstItem="XVP-sW-6xG" firstAttribute="leading" secondItem="eGn-RD-InB" secondAttribute="leading" constant="17" id="7U3-w3-0x2"/>
                                             <constraint firstItem="M1D-Df-xJ3" firstAttribute="top" secondItem="bi7-Cn-hvy" secondAttribute="bottom" constant="8" id="7rH-Ks-B3a"/>
-                                            <constraint firstItem="zdz-hH-zsY" firstAttribute="centerX" secondItem="Oxf-gw-6wf" secondAttribute="centerX" id="8Ag-Uc-rKR"/>
                                             <constraint firstItem="dA0-ev-kUN" firstAttribute="leading" secondItem="eGn-RD-InB" secondAttribute="leading" constant="17" id="9Ot-KM-aph"/>
                                             <constraint firstItem="d8j-Hg-qOS" firstAttribute="leading" secondItem="eGn-RD-InB" secondAttribute="leading" constant="17" id="9X7-Eg-a15"/>
                                             <constraint firstItem="nYv-AT-1jr" firstAttribute="centerX" secondItem="eGn-RD-InB" secondAttribute="centerX" id="DMM-D8-aTG"/>
@@ -198,9 +190,7 @@ Para conhecer mais sobre a nossa organização nossos outros projetos acesse nos
                                             <constraint firstItem="Oxf-gw-6wf" firstAttribute="top" secondItem="BfK-vJ-aIM" secondAttribute="bottom" constant="20" id="FUR-gz-ApV"/>
                                             <constraint firstItem="nYv-AT-1jr" firstAttribute="top" secondItem="d8j-Hg-qOS" secondAttribute="bottom" constant="20" id="H0a-3Z-mV5"/>
                                             <constraint firstItem="IKX-Ug-IgQ" firstAttribute="top" secondItem="j7Q-zs-2tP" secondAttribute="bottom" constant="30" id="JhO-z4-gGy"/>
-                                            <constraint firstItem="zdz-hH-zsY" firstAttribute="width" secondItem="Oxf-gw-6wf" secondAttribute="width" id="M1Y-df-YdU"/>
                                             <constraint firstItem="gbv-mM-SdX" firstAttribute="top" secondItem="7Xs-L3-UYl" secondAttribute="bottom" constant="20" id="MLK-dr-qQk"/>
-                                            <constraint firstItem="zdz-hH-zsY" firstAttribute="centerY" secondItem="Oxf-gw-6wf" secondAttribute="centerY" id="NzZ-Pj-UR6"/>
                                             <constraint firstItem="Oxf-gw-6wf" firstAttribute="centerX" secondItem="eGn-RD-InB" secondAttribute="centerX" id="Ofy-Qh-jTq"/>
                                             <constraint firstItem="j7Q-zs-2tP" firstAttribute="centerX" secondItem="eGn-RD-InB" secondAttribute="centerX" id="Pmu-Ya-CWB"/>
                                             <constraint firstItem="IKX-Ug-IgQ" firstAttribute="leading" secondItem="eGn-RD-InB" secondAttribute="leading" constant="17" id="Qlg-01-3gG"/>
@@ -227,17 +217,39 @@ Para conhecer mais sobre a nossa organização nossos outros projetos acesse nos
                                             <constraint firstAttribute="trailing" secondItem="IKX-Ug-IgQ" secondAttribute="trailing" constant="50" id="pL8-Gq-nVc"/>
                                             <constraint firstItem="M1D-Df-xJ3" firstAttribute="leading" secondItem="bi7-Cn-hvy" secondAttribute="leading" id="q5D-3L-gMk"/>
                                             <constraint firstItem="dA0-ev-kUN" firstAttribute="top" secondItem="3Gh-gt-pHq" secondAttribute="bottom" constant="8" id="tyo-pF-FAF"/>
-                                            <constraint firstItem="zdz-hH-zsY" firstAttribute="height" secondItem="Oxf-gw-6wf" secondAttribute="height" id="uwC-3x-W7l"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdz-hH-zsY">
+                                        <rect key="frame" x="62.5" y="2505" width="250" height="150"/>
+                                        <connections>
+                                            <action selector="didPressEnactus:" destination="NWU-ez-zgo" eventType="touchUpInside" id="2fP-km-6L5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XP6-bd-f4I">
+                                        <rect key="frame" x="325" y="2705" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="2Fg-Ei-JUs"/>
+                                            <constraint firstAttribute="width" secondItem="XP6-bd-f4I" secondAttribute="height" multiplier="1:1" id="k2x-VD-def"/>
+                                        </constraints>
+                                        <state key="normal" image="facebookButton"/>
+                                        <connections>
+                                            <action selector="didPressFacebookButton:" destination="NWU-ez-zgo" eventType="touchUpInside" id="kt5-gn-ULl"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="eGn-RD-InB" firstAttribute="leading" secondItem="uaQ-mg-gAe" secondAttribute="leading" id="2fK-3j-yEx"/>
+                                    <constraint firstAttribute="trailing" secondItem="XP6-bd-f4I" secondAttribute="trailing" constant="20" id="2wJ-Wk-CYq"/>
+                                    <constraint firstItem="zdz-hH-zsY" firstAttribute="centerY" secondItem="Oxf-gw-6wf" secondAttribute="centerY" id="GgY-wM-InT"/>
                                     <constraint firstAttribute="trailing" secondItem="eGn-RD-InB" secondAttribute="trailing" id="Pk9-zZ-lVr"/>
                                     <constraint firstAttribute="bottom" secondItem="eGn-RD-InB" secondAttribute="bottom" id="X7t-iL-AGd"/>
+                                    <constraint firstItem="XP6-bd-f4I" firstAttribute="top" secondItem="zdz-hH-zsY" secondAttribute="bottom" constant="50" id="ZZW-dY-fmf"/>
                                     <constraint firstItem="eGn-RD-InB" firstAttribute="width" secondItem="uaQ-mg-gAe" secondAttribute="width" id="Zwo-YL-w35"/>
                                     <constraint firstItem="eGn-RD-InB" firstAttribute="height" secondItem="uaQ-mg-gAe" secondAttribute="height" id="b5p-UZ-8yj"/>
                                     <constraint firstItem="eGn-RD-InB" firstAttribute="top" secondItem="uaQ-mg-gAe" secondAttribute="top" id="jQo-d6-LK4"/>
+                                    <constraint firstItem="zdz-hH-zsY" firstAttribute="height" secondItem="Oxf-gw-6wf" secondAttribute="height" id="k1j-hi-PfI"/>
+                                    <constraint firstItem="zdz-hH-zsY" firstAttribute="width" secondItem="Oxf-gw-6wf" secondAttribute="width" id="m0B-wc-qde"/>
+                                    <constraint firstItem="zdz-hH-zsY" firstAttribute="centerX" secondItem="Oxf-gw-6wf" secondAttribute="centerX" id="viJ-Vh-64P"/>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwW-CT-9EV">
@@ -283,6 +295,7 @@ Para conhecer mais sobre a nossa organização nossos outros projetos acesse nos
         <image name="IdeaIcon" width="165" height="165"/>
         <image name="closeX" width="32" height="32"/>
         <image name="enactusAndPurecoLogo" width="351" height="303"/>
+        <image name="facebookButton" width="100" height="100"/>
         <image name="purecoLogoNormal" width="213" height="279"/>
         <image name="venus" width="249" height="376"/>
     </resources>
