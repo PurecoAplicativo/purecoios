@@ -15,3 +15,7 @@ protocol UserServiceProtocol {
 protocol LastSchedulesProtocol {
     static func getLastCleanings(completion: @escaping (_ viewModel: LastCleaningsViewModel?, _ error: Error?) -> Void)
 }
+
+protocol ProfileServicesProtocol {
+    static func getProfileInformation(completion: @escaping (_ viewModel: ProfileViewModel?, _ error: Error?) -> Void)
+}

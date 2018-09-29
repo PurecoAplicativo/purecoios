@@ -50,3 +50,22 @@ extension Services: LastSchedulesProtocol {
         }
     }
 }
+
+extension Services: ProfileServicesProtocol {
+    static func getProfileInformation(completion: @escaping (ProfileViewModel?, Error?) -> Void) {
+        var model: ProfileViewModel? = nil
+        var requestError: Error? = nil
+        DispatchQueue.global(qos: .background).async {
+            if let user = CurrentUser.user {
+                model = ProfileViewModel(user: user)
+            } else {
+                self.updateUser()
+                if let user = CurrentUser.user {
+                    model = ProfileViewModel(user: user)
+                    requestError = nil
+                }
+            }
+            completion(model, requestError)
+        }
+    }
+}

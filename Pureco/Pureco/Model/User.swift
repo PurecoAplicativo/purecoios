@@ -14,10 +14,17 @@ final class User {
     var userId: String
     var imageURL: URL?
     
-    init(name: String, userId: String, imageURL: URL?) {
+    var addressStreet: String
+    var zipCode: String
+    var neighbourhood: String
+    
+    init(name: String, userId: String, imageURL: URL?, street: String, zip: String, neighbourhood: String) {
         self.name = name
         self.userId = userId
         self.imageURL = imageURL
+        self.zipCode = zip
+        self.addressStreet = street
+        self.neighbourhood = neighbourhood
     }
     
 }

@@ -42,6 +42,13 @@ class MainScreenViewController: UIViewController {
         super.viewWillDisappear(animated)
     }
     
+    // MARK: - Actions
+    
+    @IBAction func didPressLoginProfileButton(_ sender: Any) {
+        if viewModel?.isLoggedIn == true {
+            performSegue(withIdentifier: "profileSegue", sender: self)
+        }
+    }
 }
 
 // MARK: - MainScreenViewProtocol
