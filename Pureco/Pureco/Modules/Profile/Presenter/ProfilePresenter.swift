@@ -6,7 +6,7 @@
 //  Copyright © 2018 Pureco. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class ProfilePresenter: ProfilePresenterProtocol {
     
@@ -32,8 +32,13 @@ class ProfilePresenter: ProfilePresenterProtocol {
     }
     
     func savePressed() {
-        // Sava Data
-        view?.closeView()
+        let user = view?.changedUser
+        if user?.cpf.isValidCPF == false {
+            view?.invalidateCPF()
+        } else {
+            // Save Data
+            view?.closeView()
+        }
     }
     
 }

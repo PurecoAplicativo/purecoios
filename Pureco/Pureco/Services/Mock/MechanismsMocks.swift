@@ -11,7 +11,7 @@ import Foundation
 class UserMock {
     
     func getUser() -> User {
-        return User(name: "Gesonel", userId: "mestre_dos_disfarces", imageURL: URL(string: "https://www.ienglishstatus.com/wp-content/uploads/2018/04/Sad-Profile-Pic-for-Whatsapp.png"), street: "Rua 10", zip: "xxx.xxx.xx-xxx", neighbourhood: "Jardim Azul")
+        return User(name: "Gesonel", cpf: "11122233319", userId: "mestre_dos_disfarces", imageURL: URL(string: "https://www.ienglishstatus.com/wp-content/uploads/2018/04/Sad-Profile-Pic-for-Whatsapp.png"), street: "Rua 10", zip: "xxx.xxx.xx-xxx", neighbourhood: "Jardim Azul")
     }
 }
 

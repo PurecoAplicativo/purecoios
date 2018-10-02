@@ -17,4 +17,6 @@ extension UIColor {
     
     // Label Colors
     static var unactiveLabelGray = UIColor(red: 184.0/255.0, green: 184.0/255.0, blue: 184.0/255.0, alpha: 1)
+    
+    static var lightRedWarning = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 0.5)
 }

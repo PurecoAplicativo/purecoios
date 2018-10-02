@@ -6,7 +6,7 @@
 //  Copyright © 2018 Pureco. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol ProfilePresenterProtocol: class {
     
@@ -19,9 +19,11 @@ protocol ProfileViewProtocol: NSObjectProtocol {
     
     var presenter: ProfilePresenterProtocol? { get set }
     var viewModel: ProfileViewModel? { get set }
+    var changedUser: User { get }
     
     func setup()
     func startLoading()
     func stopLoading()
     func closeView()
+    func invalidateCPF()
 }

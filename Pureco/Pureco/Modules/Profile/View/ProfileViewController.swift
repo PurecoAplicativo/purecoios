@@ -21,6 +21,16 @@ class ProfileViewController: UIViewController {
     var viewModel: ProfileViewModel?
     var presenter: ProfilePresenterProtocol?
     
+    var changedUser: User {
+        return User(name: nameTextField.text ?? "",
+                    cpf: cpfTextField.text ?? "",
+                    userId: viewModel?.user.userId ?? "",
+                    imageURL: viewModel?.user.imageURL, // TODO: Change when image changes
+                    street: streetTextField.text ?? "",
+                    zip: zipCodeTextField.text ?? "",
+                    neighbourhood: neighbourhoodTextField.text ?? "")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -77,6 +87,11 @@ extension ProfileViewController: ProfileViewProtocol {
         neighbourhoodTextField.text = model.user.neighbourhood
         streetTextField.text = model.user.addressStreet
         profileImage.kf.setImage(with: model.user.imageURL)
+    }
+    
+    func invalidateCPF() {
+        self.showWarning(title: "CPF Inválido")
+        cpfTextField.backgroundColor = UIColor.lightRedWarning
     }
 }
 
