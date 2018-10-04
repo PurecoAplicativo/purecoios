@@ -13,7 +13,7 @@
         <!--Notification-->
         <scene sceneID="uXe-OC-L47">
             <objects>
-                <viewController title="Notification" id="e1T-jB-cqD" sceneMemberID="viewController">
+                <viewController title="Notification" id="e1T-jB-cqD" customClass="LoginViewController" customModule="Pureco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q5N-3N-gqy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,18 +33,30 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Y0-bH-XIQ">
+                                <rect key="frame" x="164" y="617" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="TWg-Aa-iYf" kind="show" id="eXp-cC-TYZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xTg-9k-Wnd" firstAttribute="centerY" secondItem="0cB-f5-83s" secondAttribute="centerY" id="36Z-9J-jBS"/>
                             <constraint firstItem="7Hg-z7-m0s" firstAttribute="centerX" secondItem="fWn-2K-rqh" secondAttribute="centerX" id="7s6-d5-Sjo"/>
+                            <constraint firstItem="7Y0-bH-XIQ" firstAttribute="leading" secondItem="0cB-f5-83s" secondAttribute="leading" constant="164" id="Amo-d4-Bhw"/>
                             <constraint firstItem="xTg-9k-Wnd" firstAttribute="centerX" secondItem="0cB-f5-83s" secondAttribute="centerX" id="QbI-60-4Tx"/>
+                            <constraint firstItem="0cB-f5-83s" firstAttribute="bottom" secondItem="7Y0-bH-XIQ" secondAttribute="bottom" constant="20" id="RVH-QI-ybX"/>
                             <constraint firstItem="xTg-9k-Wnd" firstAttribute="height" secondItem="q5N-3N-gqy" secondAttribute="height" multiplier="1.1" id="Tuu-Tq-byj"/>
                             <constraint firstItem="fWn-2K-rqh" firstAttribute="centerX" secondItem="0cB-f5-83s" secondAttribute="centerX" id="aYS-YR-YwX"/>
                             <constraint firstItem="xTg-9k-Wnd" firstAttribute="width" secondItem="q5N-3N-gqy" secondAttribute="width" multiplier="1.1" id="dM9-1i-tR1"/>
                             <constraint firstItem="fWn-2K-rqh" firstAttribute="top" secondItem="0cB-f5-83s" secondAttribute="top" constant="20" id="hab-qg-eAE"/>
                             <constraint firstItem="fWn-2K-rqh" firstAttribute="width" secondItem="q5N-3N-gqy" secondAttribute="width" multiplier="0.3" id="j1f-HB-W94"/>
                             <constraint firstItem="7Hg-z7-m0s" firstAttribute="top" secondItem="fWn-2K-rqh" secondAttribute="bottom" constant="18.5" id="n3L-Aa-E9M"/>
+                            <constraint firstItem="0cB-f5-83s" firstAttribute="trailing" secondItem="7Y0-bH-XIQ" secondAttribute="trailing" constant="165" id="oc4-ie-15g"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0cB-f5-83s"/>
                     </view>
@@ -52,6 +64,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fCf-ss-6Aa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="447" y="-125"/>
+        </scene>
+        <!--MainScreen-->
+        <scene sceneID="DkX-tn-5eo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainScreen" id="TWg-Aa-iYf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9IK-w2-scq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="-159"/>
         </scene>
     </scenes>
     <resources>

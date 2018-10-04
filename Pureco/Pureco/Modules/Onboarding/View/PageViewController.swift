@@ -23,6 +23,16 @@ class PageViewController: UIPageViewController {
             setViewControllers([firstViewController ?? UIViewController()], direction: .forward, animated: true, completion: nil)
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        super.viewWillDisappear(animated)
+    }
 }
 
 extension PageViewController: UIPageViewControllerDataSource {
