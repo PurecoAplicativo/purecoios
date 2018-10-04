@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e1T-jB-cqD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification-->
+        <scene sceneID="uXe-OC-L47">
+            <objects>
+                <viewController title="Notification" id="e1T-jB-cqD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q5N-3N-gqy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueBG" translatesAutoresizingMaskIntoConstraints="NO" id="xTg-9k-Wnd">
+                                <rect key="frame" x="-19" y="-23.5" width="413" height="734"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginIcon" translatesAutoresizingMaskIntoConstraints="NO" id="fWn-2K-rqh">
+                                <rect key="frame" x="131.5" y="40" width="112.5" height="112.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fWn-2K-rqh" secondAttribute="height" multiplier="1:1" id="pXQ-am-icu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hg-z7-m0s">
+                                <rect key="frame" x="162" y="171" width="51" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xTg-9k-Wnd" firstAttribute="centerY" secondItem="0cB-f5-83s" secondAttribute="centerY" id="36Z-9J-jBS"/>
+                            <constraint firstItem="7Hg-z7-m0s" firstAttribute="centerX" secondItem="fWn-2K-rqh" secondAttribute="centerX" id="7s6-d5-Sjo"/>
+                            <constraint firstItem="xTg-9k-Wnd" firstAttribute="centerX" secondItem="0cB-f5-83s" secondAttribute="centerX" id="QbI-60-4Tx"/>
+                            <constraint firstItem="xTg-9k-Wnd" firstAttribute="height" secondItem="q5N-3N-gqy" secondAttribute="height" multiplier="1.1" id="Tuu-Tq-byj"/>
+                            <constraint firstItem="fWn-2K-rqh" firstAttribute="centerX" secondItem="0cB-f5-83s" secondAttribute="centerX" id="aYS-YR-YwX"/>
+                            <constraint firstItem="xTg-9k-Wnd" firstAttribute="width" secondItem="q5N-3N-gqy" secondAttribute="width" multiplier="1.1" id="dM9-1i-tR1"/>
+                            <constraint firstItem="fWn-2K-rqh" firstAttribute="top" secondItem="0cB-f5-83s" secondAttribute="top" constant="20" id="hab-qg-eAE"/>
+                            <constraint firstItem="fWn-2K-rqh" firstAttribute="width" secondItem="q5N-3N-gqy" secondAttribute="width" multiplier="0.3" id="j1f-HB-W94"/>
+                            <constraint firstItem="7Hg-z7-m0s" firstAttribute="top" secondItem="fWn-2K-rqh" secondAttribute="bottom" constant="18.5" id="n3L-Aa-E9M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0cB-f5-83s"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCf-ss-6Aa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447" y="-125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blueBG" width="375" height="667"/>
+        <image name="loginIcon" width="103" height="103"/>
+    </resources>
+</document>

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		15D69078CC8D743E431D140F /* Pods_Pureco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 762D75C6DBC9F3627A207178 /* Pods_Pureco.framework */; };
+		3E14E23D21664FE8002E68E5 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E14E23C21664FE8002E68E5 /* Onboarding.storyboard */; };
+		3E14E24121665296002E68E5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E14E24021665296002E68E5 /* Login.storyboard */; };
+		3E14E24321665399002E68E5 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E14E24221665399002E68E5 /* PageViewController.swift */; };
+		3E14E245216656D4002E68E5 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E14E244216656D4002E68E5 /* OnboardingViewController.swift */; };
 		3E4794D021570043005FF170 /* PreviousCleaningCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794CF21570043005FF170 /* PreviousCleaningCard.swift */; };
 		3E4794D3215700E3005FF170 /* ShowWarning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794D2215700E3005FF170 /* ShowWarning.swift */; };
 		3E4794D62157056E005FF170 /* Cleaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4794D52157056E005FF170 /* Cleaning.swift */; };
@@ -48,6 +52,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E14E23C21664FE8002E68E5 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		3E14E24021665296002E68E5 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		3E14E24221665399002E68E5 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		3E14E244216656D4002E68E5 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		3E4794CF21570043005FF170 /* PreviousCleaningCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousCleaningCard.swift; sourceTree = "<group>"; };
 		3E4794D2215700E3005FF170 /* ShowWarning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowWarning.swift; sourceTree = "<group>"; };
 		3E4794D52157056E005FF170 /* Cleaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cleaning.swift; sourceTree = "<group>"; };
@@ -104,6 +112,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E14E23821664FC1002E68E5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				3E14E23B21664FD2002E68E5 /* Protocols */,
+				3E14E23A21664FCD002E68E5 /* Presenter */,
+				3E14E23921664FC9002E68E5 /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		3E14E23921664FC9002E68E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E14E23C21664FE8002E68E5 /* Onboarding.storyboard */,
+				3E14E24221665399002E68E5 /* PageViewController.swift */,
+				3E14E244216656D4002E68E5 /* OnboardingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E14E23A21664FCD002E68E5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3E14E23B21664FD2002E68E5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3E14E23E21665286002E68E5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3E14E23F2166528D002E68E5 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3E14E23F2166528D002E68E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E14E24021665296002E68E5 /* Login.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3E4794D1215700D0005FF170 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +322,8 @@
 			isa = PBXGroup;
 			children = (
 				3E4794F12157DF01005FF170 /* Navigation */,
+				3E14E23E21665286002E68E5 /* Login */,
+				3E14E23821664FC1002E68E5 /* Onboarding */,
 				3ED95FA8215FD7AF00730D6D /* Profile */,
 				3EF7FBF82156E97E0015B981 /* About */,
 				3E4794DE2157DA5B005FF170 /* LastCleanings */,
@@ -499,6 +559,8 @@
 				3EF7FBEE2156E9480015B981 /* MainScreen.storyboard in Resources */,
 				3ED95FAE215FD7DE00730D6D /* Profile.storyboard in Resources */,
 				B19E374B214985F1007C7B7A /* Assets.xcassets in Resources */,
+				3E14E23D21664FE8002E68E5 /* Onboarding.storyboard in Resources */,
+				3E14E24121665296002E68E5 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,6 +632,7 @@
 				3ED95FB0215FD97200730D6D /* ProfileViewController.swift in Sources */,
 				3E8535492163A78700235AF6 /* StringExtensions.swift in Sources */,
 				3EF7FC002156EACA0015B981 /* ColorConstants.swift in Sources */,
+				3E14E24321665399002E68E5 /* PageViewController.swift in Sources */,
 				3EF7FC062156F86A0015B981 /* ServiceProtocols.swift in Sources */,
 				3E4794F02157DD66005FF170 /* LastCleaningPresenter.swift in Sources */,
 				3EF7FBEF2156E9480015B981 /* MainScreenViewController.swift in Sources */,
@@ -582,6 +645,7 @@
 				3EF7FC092156FB3A0015B981 /* MechanismsMocks.swift in Sources */,
 				3E4794E72157DB40005FF170 /* LastCleaningsTableViewCell.swift in Sources */,
 				3EF7FC0D2156FD510015B981 /* ScheduleCleaningCard.swift in Sources */,
+				3E14E245216656D4002E68E5 /* OnboardingViewController.swift in Sources */,
 				3ED95FB2215FFDA900730D6D /* ProfilePresenter.swift in Sources */,
 				3EF7FBFC2156E98D0015B981 /* AboutViewController.swift in Sources */,
 				3E4794D3215700E3005FF170 /* ShowWarning.swift in Sources */,

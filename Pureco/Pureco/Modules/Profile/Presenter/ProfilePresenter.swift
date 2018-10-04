@@ -12,7 +12,7 @@ class ProfilePresenter: ProfilePresenterProtocol {
     
     var view: ProfileViewProtocol?
     
-    init (_ view: ProfileViewProtocol) {
+    init (view: ProfileViewProtocol) {
         self.view = view
     }
     

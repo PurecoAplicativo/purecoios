@@ -16,11 +16,11 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var neighbourhoodTextField: UITextField!
     @IBOutlet weak var streetTextField: UITextField!
     @IBOutlet weak var profileImage: RoundImageView!
-    
+
     var loadingView: UIView?
     var viewModel: ProfileViewModel?
     var presenter: ProfilePresenterProtocol?
-    
+
     var changedUser: User {
         return User(name: nameTextField.text ?? "",
                     cpf: cpfTextField.text ?? "",
@@ -34,7 +34,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.presenter = ProfilePresenter(self)
+        self.presenter = ProfilePresenter(view: self)
         presenter?.didLoad()
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
