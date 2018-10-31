@@ -11,7 +11,7 @@ import Foundation
 protocol LastCleaningViewControllerProtocol: NSObjectProtocol {
     var presenter: LastCleaningPresenterProtocol? { get }
     var viewModel: LastCleaningsViewModel? { get set }
-    
+
     func startLoading()
     func stopLoading()
     func setup()

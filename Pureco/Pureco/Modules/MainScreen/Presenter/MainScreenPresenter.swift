@@ -9,13 +9,12 @@
 import Foundation
 
 class MainScreenPresenter: MainScreenPresenterProtocol {
-    
     weak var view: MainScreenViewProtocol?
-    
+
     init(view: MainScreenViewProtocol) {
         self.view = view
     }
-    
+
     func didLoad() {
         view?.startLoading()
         Services.getMainScreenInfo(completion: { (model, error)  in
@@ -30,5 +29,4 @@ class MainScreenPresenter: MainScreenPresenterProtocol {
         })
         Services.updateUser()
     }
-    
 }

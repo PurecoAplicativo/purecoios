@@ -9,9 +9,8 @@
 import UIKit
 
 class PurecoLoaderImageView: UIImageView {
-
     let images: [UIImage] = [#imageLiteral(resourceName: "loading_pureco00"), #imageLiteral(resourceName: "loading_pureco01"), #imageLiteral(resourceName: "loading_pureco02"), #imageLiteral(resourceName: "loading_pureco03"), #imageLiteral(resourceName: "loading_pureco04"), #imageLiteral(resourceName: "loading_pureco05"), #imageLiteral(resourceName: "loading_pureco06"), #imageLiteral(resourceName: "loading_pureco07"), #imageLiteral(resourceName: "loading_pureco08"), #imageLiteral(resourceName: "loading_pureco09"), #imageLiteral(resourceName: "loading_pureco10")]
-    
+
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
         accessibilityHint = "Carregando"
@@ -19,5 +18,4 @@ class PurecoLoaderImageView: UIImageView {
         animationImages = images
         startAnimating()
     }
-
 }

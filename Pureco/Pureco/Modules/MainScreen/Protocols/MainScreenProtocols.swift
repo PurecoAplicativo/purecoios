@@ -9,19 +9,15 @@
 import Foundation
 
 protocol MainScreenViewProtocol: NSObjectProtocol {
-    
     var presenter: MainScreenPresenterProtocol? { get }
     var viewModel: MainScreenViewModel? { get set }
-    
+
     func startLoading()
     func stopLoading()
     func setup()
-    
 }
 
 protocol MainScreenPresenterProtocol: class {
-    
     var view: MainScreenViewProtocol? { get }
     func didLoad()
-    
 }

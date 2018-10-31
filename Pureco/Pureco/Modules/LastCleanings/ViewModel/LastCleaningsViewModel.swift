@@ -9,13 +9,11 @@
 import Foundation
 
 class LastCleaningsViewModel {
-    
     var oldCleanings: [Cleaning]
     var nextCleanings: [Cleaning]
-    
+
     init(old: [Cleaning], next: [Cleaning]) {
         self.nextCleanings = next
         self.oldCleanings = old
     }
-    
 }

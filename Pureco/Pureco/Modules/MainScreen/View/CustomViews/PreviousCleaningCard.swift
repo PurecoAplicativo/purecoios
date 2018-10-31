@@ -9,13 +9,12 @@
 import UIKit
 
 class PreviousCleaningCard: CardView {
-    
     @IBOutlet var warningLabel: UILabel?
     @IBOutlet var titleLabel: UILabel?
     @IBOutlet var lastCleaningLabel: UILabel?
     @IBOutlet var dateLabel: UILabel?
     @IBOutlet var addressLabel: UILabel?
-    
+
     func setup(cleaning: Cleaning?) {
         guard let cleaning = cleaning else {
             warningLabel?.isHidden = false
@@ -32,5 +31,4 @@ class PreviousCleaningCard: CardView {
         addressLabel?.text = cleaning.address
         dateLabel?.text = DateFormatter.commonDateFormat.string(from: cleaning.date)
     }
-    
 }

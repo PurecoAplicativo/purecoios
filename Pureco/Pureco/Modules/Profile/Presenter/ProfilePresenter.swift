@@ -9,13 +9,12 @@
 import UIKit
 
 class ProfilePresenter: ProfilePresenterProtocol {
-    
     var view: ProfileViewProtocol?
-    
+
     init (view: ProfileViewProtocol) {
         self.view = view
     }
-    
+
     func didLoad() {
         view?.startLoading()
         Services.getProfileInformation { (model, error) in
@@ -30,7 +29,7 @@ class ProfilePresenter: ProfilePresenterProtocol {
             }
         }
     }
-    
+
     func savePressed() {
         let user = view?.changedUser
         if user?.cpf.isValidCPF == false {
@@ -40,5 +39,4 @@ class ProfilePresenter: ProfilePresenterProtocol {
             view?.closeView()
         }
     }
-    
 }
