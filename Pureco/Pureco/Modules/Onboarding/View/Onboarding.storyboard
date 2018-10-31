@@ -22,28 +22,30 @@
                                 <rect key="frame" x="-19" y="-23.5" width="413" height="734"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PurecoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="xWM-1W-bFp">
-                                <rect key="frame" x="94" y="60" width="187.5" height="187.5"/>
+                                <rect key="frame" x="112.5" y="60" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="xWM-1W-bFp" secondAttribute="height" multiplier="1:1" id="NsI-Wm-Spe"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pureco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drU-cE-CYg">
-                                <rect key="frame" x="155" y="266" width="65" height="24"/>
+                                <rect key="frame" x="155" y="228.5" width="65" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpF-bt-H6t">
-                                <rect key="frame" x="290" y="617" width="69" height="30"/>
-                                <state key="normal" title="Próximo &gt;">
+                                <rect key="frame" x="303" y="618.5" width="56" height="30"/>
+                                <state key="normal" title="Próximo">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="didPressNextWithSender:" destination="fiw-RQ-zAz" eventType="touchUpInside" id="LGZ-Ya-QfT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUH-bE-Ru0">
-                                <rect key="frame" x="30" y="311" width="315" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUH-bE-Ru0">
+                                <rect key="frame" x="30" y="273.5" width="315" height="41"/>
+                                <string key="text">Agende limpezas na área 
+de Barão Geraldo</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -54,7 +56,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xWM-1W-bFp" firstAttribute="width" secondItem="5jX-Y3-NVk" secondAttribute="width" multiplier="0.5" id="0lj-Rg-P05"/>
                             <constraint firstItem="k4n-ew-YEg" firstAttribute="height" secondItem="5jX-Y3-NVk" secondAttribute="height" multiplier="1.1" id="1LS-Jj-44A"/>
                             <constraint firstItem="RFA-QQ-hl0" firstAttribute="bottom" secondItem="ViZ-nd-wRU" secondAttribute="bottom" constant="15" id="A0O-zx-MOR"/>
                             <constraint firstItem="k4n-ew-YEg" firstAttribute="centerX" secondItem="RFA-QQ-hl0" secondAttribute="centerX" id="GPY-ck-7JP"/>
@@ -63,7 +64,7 @@
                             <constraint firstItem="RFA-QQ-hl0" firstAttribute="trailing" secondItem="ZpF-bt-H6t" secondAttribute="trailing" constant="16" id="TR1-0e-I8h"/>
                             <constraint firstItem="bUH-bE-Ru0" firstAttribute="top" secondItem="drU-cE-CYg" secondAttribute="bottom" constant="21" id="Tte-iU-3nu"/>
                             <constraint firstItem="bUH-bE-Ru0" firstAttribute="leading" secondItem="RFA-QQ-hl0" secondAttribute="leading" constant="30" id="YGR-n7-co2"/>
-                            <constraint firstItem="RFA-QQ-hl0" firstAttribute="bottom" secondItem="ZpF-bt-H6t" secondAttribute="bottom" constant="20" id="gBo-Gk-2pw"/>
+                            <constraint firstItem="ZpF-bt-H6t" firstAttribute="centerY" secondItem="ViZ-nd-wRU" secondAttribute="centerY" id="eGd-bR-uuK"/>
                             <constraint firstItem="drU-cE-CYg" firstAttribute="centerX" secondItem="xWM-1W-bFp" secondAttribute="centerX" id="kTi-35-Lsp"/>
                             <constraint firstItem="xWM-1W-bFp" firstAttribute="centerX" secondItem="RFA-QQ-hl0" secondAttribute="centerX" id="oZ4-Cp-Z0r"/>
                             <constraint firstItem="RFA-QQ-hl0" firstAttribute="trailing" secondItem="bUH-bE-Ru0" secondAttribute="trailing" constant="30" id="q7S-bt-MBU"/>
@@ -114,20 +115,20 @@
                                 <rect key="frame" x="168" y="615" width="39" height="37"/>
                             </pageControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NotificationIcon" translatesAutoresizingMaskIntoConstraints="NO" id="PVH-ZU-dxU">
-                                <rect key="frame" x="94" y="60" width="187.5" height="187.5"/>
+                                <rect key="frame" x="106.5" y="60" width="162" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="PVH-ZU-dxU" secondAttribute="height" multiplier="1:1" id="ZmM-ao-lVj"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notificações" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbz-4o-whA">
-                                <rect key="frame" x="129.5" y="266" width="116" height="24"/>
+                                <rect key="frame" x="129.5" y="240.5" width="116" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvn-9f-FGb">
-                                <rect key="frame" x="290" y="617" width="69" height="30"/>
-                                <state key="normal" title="Próximo &gt;">
+                                <rect key="frame" x="303" y="618.5" width="56" height="30"/>
+                                <state key="normal" title="Próximo">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -135,7 +136,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pureco gostaria de enviar notificações sobre seus agendamentos e chats" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uia-CX-W9n">
-                                <rect key="frame" x="30" y="311" width="315" height="41"/>
+                                <rect key="frame" x="30" y="285.5" width="315" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -145,19 +146,18 @@
                         <constraints>
                             <constraint firstItem="P4S-7u-2xX" firstAttribute="centerX" secondItem="2u7-Aw-FXX" secondAttribute="centerX" id="2ki-C2-TJc"/>
                             <constraint firstItem="2u7-Aw-FXX" firstAttribute="trailing" secondItem="Uia-CX-W9n" secondAttribute="trailing" constant="30" id="59a-k4-BJ2"/>
-                            <constraint firstItem="2u7-Aw-FXX" firstAttribute="bottom" secondItem="Gvn-9f-FGb" secondAttribute="bottom" constant="20" id="8kD-fr-xjC"/>
                             <constraint firstItem="PVH-ZU-dxU" firstAttribute="centerX" secondItem="2u7-Aw-FXX" secondAttribute="centerX" id="NQe-Rw-5tE"/>
                             <constraint firstItem="Uia-CX-W9n" firstAttribute="top" secondItem="mbz-4o-whA" secondAttribute="bottom" constant="21" id="Qak-XW-15c"/>
                             <constraint firstItem="Uia-CX-W9n" firstAttribute="centerX" secondItem="mbz-4o-whA" secondAttribute="centerX" id="amG-Ki-BSe"/>
                             <constraint firstItem="PVH-ZU-dxU" firstAttribute="top" secondItem="2u7-Aw-FXX" secondAttribute="top" constant="40" id="aoa-oG-2eB"/>
                             <constraint firstItem="2u7-Aw-FXX" firstAttribute="bottom" secondItem="WwK-dr-vRD" secondAttribute="bottom" constant="15" id="bhO-L8-gDP"/>
-                            <constraint firstItem="PVH-ZU-dxU" firstAttribute="width" secondItem="paY-IY-kuV" secondAttribute="width" multiplier="0.5" id="fgs-Jo-KPB"/>
                             <constraint firstItem="P4S-7u-2xX" firstAttribute="width" secondItem="paY-IY-kuV" secondAttribute="width" multiplier="1.1" id="ig4-AO-vV6"/>
                             <constraint firstItem="2u7-Aw-FXX" firstAttribute="trailing" secondItem="Gvn-9f-FGb" secondAttribute="trailing" constant="16" id="lb1-0e-btS"/>
                             <constraint firstItem="Uia-CX-W9n" firstAttribute="leading" secondItem="2u7-Aw-FXX" secondAttribute="leading" constant="30" id="ngh-mz-OQE"/>
                             <constraint firstItem="P4S-7u-2xX" firstAttribute="centerY" secondItem="2u7-Aw-FXX" secondAttribute="centerY" id="oT8-LJ-9IB"/>
                             <constraint firstItem="mbz-4o-whA" firstAttribute="centerX" secondItem="PVH-ZU-dxU" secondAttribute="centerX" id="qm0-3m-deH"/>
                             <constraint firstItem="P4S-7u-2xX" firstAttribute="height" secondItem="paY-IY-kuV" secondAttribute="height" multiplier="1.1" id="rl9-2H-cMv"/>
+                            <constraint firstItem="Gvn-9f-FGb" firstAttribute="centerY" secondItem="WwK-dr-vRD" secondAttribute="centerY" id="wbp-pO-pyR"/>
                             <constraint firstItem="mbz-4o-whA" firstAttribute="top" secondItem="PVH-ZU-dxU" secondAttribute="bottom" constant="18.5" id="xDX-1O-ioh"/>
                             <constraint firstItem="WwK-dr-vRD" firstAttribute="centerX" secondItem="2u7-Aw-FXX" secondAttribute="centerX" id="yBz-XK-Ehl"/>
                         </constraints>
@@ -183,20 +183,20 @@
                                 <rect key="frame" x="168" y="615" width="39" height="37"/>
                             </pageControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LocationIcon" translatesAutoresizingMaskIntoConstraints="NO" id="GQR-i8-RMY">
-                                <rect key="frame" x="94" y="60" width="187.5" height="187.5"/>
+                                <rect key="frame" x="112.5" y="60" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="GQR-i8-RMY" secondAttribute="height" multiplier="1:1" id="WAA-PT-cMo"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Localização" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtF-K6-EfO">
-                                <rect key="frame" x="133" y="266" width="109" height="24"/>
+                                <rect key="frame" x="133" y="228.5" width="109" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRb-2w-0Zk">
-                                <rect key="frame" x="288" y="617" width="71" height="30"/>
-                                <state key="normal" title="Concluir &gt;">
+                                <rect key="frame" x="302" y="618.5" width="57" height="30"/>
+                                <state key="normal" title="Concluir">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -204,7 +204,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pureco gostaria de ter acesso à sua localização para facilitar a seleção de endereço para seus agendamentos." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7I-Eh-CDU">
-                                <rect key="frame" x="30" y="311" width="315" height="61"/>
+                                <rect key="frame" x="30" y="273.5" width="315" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -213,6 +213,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GQR-i8-RMY" firstAttribute="centerX" secondItem="KiM-lE-x4s" secondAttribute="centerX" id="CDg-ic-csT"/>
+                            <constraint firstItem="VRb-2w-0Zk" firstAttribute="centerY" secondItem="KQ4-QZ-dMk" secondAttribute="centerY" id="DQE-iM-x79"/>
                             <constraint firstItem="KqZ-Uz-uHm" firstAttribute="width" secondItem="Cdy-aO-e5N" secondAttribute="width" multiplier="1.1" id="HFd-qp-aW4"/>
                             <constraint firstItem="KQ4-QZ-dMk" firstAttribute="centerX" secondItem="KiM-lE-x4s" secondAttribute="centerX" id="N4E-cP-Xeg"/>
                             <constraint firstItem="h7I-Eh-CDU" firstAttribute="top" secondItem="OtF-K6-EfO" secondAttribute="bottom" constant="21" id="PNe-Yj-eyp"/>
@@ -223,12 +224,10 @@
                             <constraint firstItem="KqZ-Uz-uHm" firstAttribute="centerX" secondItem="KiM-lE-x4s" secondAttribute="centerX" id="bzL-E7-qDo"/>
                             <constraint firstItem="OtF-K6-EfO" firstAttribute="centerX" secondItem="GQR-i8-RMY" secondAttribute="centerX" id="dRL-ap-GFf"/>
                             <constraint firstItem="OtF-K6-EfO" firstAttribute="top" secondItem="GQR-i8-RMY" secondAttribute="bottom" constant="18.5" id="i7V-eb-kWB"/>
-                            <constraint firstItem="KiM-lE-x4s" firstAttribute="bottom" secondItem="VRb-2w-0Zk" secondAttribute="bottom" constant="20" id="jZb-th-Rjp"/>
                             <constraint firstItem="GQR-i8-RMY" firstAttribute="top" secondItem="KiM-lE-x4s" secondAttribute="top" constant="40" id="k5V-ws-4d1"/>
                             <constraint firstItem="KiM-lE-x4s" firstAttribute="trailing" secondItem="VRb-2w-0Zk" secondAttribute="trailing" constant="16" id="mFg-rK-QOI"/>
                             <constraint firstItem="KiM-lE-x4s" firstAttribute="bottom" secondItem="KQ4-QZ-dMk" secondAttribute="bottom" constant="15" id="tGt-ni-hSi"/>
                             <constraint firstItem="KqZ-Uz-uHm" firstAttribute="height" secondItem="Cdy-aO-e5N" secondAttribute="height" multiplier="1.1" id="wsm-Fb-wi7"/>
-                            <constraint firstItem="GQR-i8-RMY" firstAttribute="width" secondItem="Cdy-aO-e5N" secondAttribute="width" multiplier="0.5" id="zdY-cq-GZJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KiM-lE-x4s"/>
                     </view>
@@ -239,8 +238,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LocationIcon" width="300" height="300"/>
-        <image name="NotificationIcon" width="322" height="324"/>
+        <image name="LocationIcon" width="150" height="150"/>
+        <image name="NotificationIcon" width="161" height="162"/>
         <image name="PurecoIcon" width="150" height="150"/>
         <image name="blueBG" width="375" height="667"/>
     </resources>
