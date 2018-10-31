@@ -14,7 +14,7 @@ extension UIViewController {
         let activity = UIActivityIndicatorView(frame: .zero)
         activity.startAnimating()
         activity.center = view.center
-        activity.activityIndicatorViewStyle = .whiteLarge
+        activity.style = .whiteLarge
         return activity
     }
     
