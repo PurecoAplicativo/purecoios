@@ -9,12 +9,11 @@
 import UIKit
 
 class LastCleaningsTableViewController: UITableViewController {
-
     var viewModel: LastCleaningsViewModel?
     var presenter: LastCleaningPresenterProtocol?
-    
+
     private var loadingView: UIView?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter = LastCleaningPresenter(view: self)
@@ -34,14 +33,14 @@ class LastCleaningsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let row = indexPath.row
         let section = indexPath.section
-        
+
         let cell: LastCleaningsTableViewCell?
         cell = tableView.dequeueReusableCell(withIdentifier: "lastCleaningsCell") as? LastCleaningsTableViewCell
         cell?.setup(cleaning: (section == 0 ? viewModel?.nextCleanings[row] :
                                               viewModel?.oldCleanings[row])!)
         return cell ?? UITableViewCell()
     }
-    
+
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return section == 0 ?
             (viewModel?.nextCleanings.count ?? 0 == 0 ? "" : "AGENDADOS") :
@@ -55,15 +54,13 @@ extension LastCleaningsTableViewController: LastCleaningViewControllerProtocol {
         view.isUserInteractionEnabled = false
         loadingView = self.showFullScreenLoading()
     }
-    
+
     func stopLoading() {
         view.isUserInteractionEnabled = true
         loadingView?.removeFromSuperview()
     }
-    
+
     func setup() {
         self.tableView.reloadData()
     }
-    
-    
 }

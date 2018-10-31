@@ -9,21 +9,17 @@
 import UIKit
 
 class OnboardingViewController: UIViewController {
-    
     var delegate: OnboardingViewNavigationDelegate?
 
     @IBAction func didPressLocation(sender: Any) {
-        
     }
-    
+
     @IBAction func didPressNotifications(sender: Any) {
-        
     }
-    
+
     @IBAction func didPressNext(sender: Any) {
         delegate?.didPressNext()
     }
-
 }
 
 protocol OnboardingViewNavigationDelegate {

@@ -9,22 +9,21 @@
 import Foundation
 
 class Services {
-    
     static var mainScreenMechanism = MainScreenServiceMock()
     static var lastCleaningsMechanism = LastCleaningServiceMock()
-    
+
     static func updateUser() {
         DispatchQueue.global(qos: .background).async {
             CurrentUser.user = UserMock().getUser()
         }
     }
-    
 }
 
 extension Services: UserServiceProtocol {
     static func getMainScreenInfo(completion: @escaping (MainScreenViewModel?, Error?) -> Void) {
-        var model: MainScreenViewModel? = nil
-        var requestError: Error? = nil
+        var model: MainScreenViewModel?
+        var requestError: Error?
+
         DispatchQueue.global(qos: .background).async {
             do {
                 try model = mainScreenMechanism.getMainScreenInfo()
@@ -38,8 +37,9 @@ extension Services: UserServiceProtocol {
 
 extension Services: LastSchedulesProtocol {
     static func getLastCleanings(completion: @escaping (LastCleaningsViewModel?, Error?) -> Void) {
-        var model: LastCleaningsViewModel? = nil
-        var requestError: Error? = nil
+        var model: LastCleaningsViewModel?
+        var requestError: Error?
+
         DispatchQueue.global(qos: .background).async {
             do {
                 try model = lastCleaningsMechanism.getLastCleanings()
@@ -53,8 +53,9 @@ extension Services: LastSchedulesProtocol {
 
 extension Services: ProfileServicesProtocol {
     static func getProfileInformation(completion: @escaping (ProfileViewModel?, Error?) -> Void) {
-        var model: ProfileViewModel? = nil
-        var requestError: Error? = nil
+        var model: ProfileViewModel?
+        var requestError: Error?
+
         DispatchQueue.global(qos: .background).async {
             if let user = CurrentUser.user {
                 model = ProfileViewModel(user: user)

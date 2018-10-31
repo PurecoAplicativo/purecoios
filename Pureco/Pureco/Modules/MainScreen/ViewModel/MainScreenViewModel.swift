@@ -9,12 +9,11 @@
 import Foundation
 
 class MainScreenViewModel {
-    
     var isLoggedIn: Bool {
         return CurrentUser.user != nil
     }
     var lastSchedules: [Cleaning]?
-    
+
     init(lastSchedules: [Cleaning]?) {
         self.lastSchedules = lastSchedules
     }

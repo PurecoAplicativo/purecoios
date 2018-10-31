@@ -10,7 +10,7 @@ import Foundation
 
 class ProfileViewModel {
     var user: User
-    
+
     init(user: User) {
         self.user = user
     }

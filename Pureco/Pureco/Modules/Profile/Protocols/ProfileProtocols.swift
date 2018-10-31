@@ -9,18 +9,16 @@
 import UIKit
 
 protocol ProfilePresenterProtocol: class {
-    
     var view: ProfileViewProtocol? { get }
     func didLoad()
     func savePressed()
 }
 
 protocol ProfileViewProtocol: NSObjectProtocol {
-    
     var presenter: ProfilePresenterProtocol? { get set }
     var viewModel: ProfileViewModel? { get set }
     var changedUser: User { get }
-    
+
     func setup()
     func startLoading()
     func stopLoading()

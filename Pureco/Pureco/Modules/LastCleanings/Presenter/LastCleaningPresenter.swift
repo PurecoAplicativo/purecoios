@@ -10,11 +10,11 @@ import Foundation
 
 class LastCleaningPresenter: LastCleaningPresenterProtocol {
     weak var view: LastCleaningViewControllerProtocol?
-    
+
     init(view: LastCleaningViewControllerProtocol) {
         self.view = view
     }
-    
+
     func didLoad() {
         view?.startLoading()
         Services.getLastCleanings { (model, error) in
@@ -28,5 +28,4 @@ class LastCleaningPresenter: LastCleaningPresenterProtocol {
             }
         }
     }
-    
 }

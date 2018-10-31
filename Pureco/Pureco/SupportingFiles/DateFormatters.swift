@@ -9,7 +9,6 @@
 import Foundation
 
 extension DateFormatter {
-    
     static var commonDateFormat: DateFormatter {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd/MM/yyyy"

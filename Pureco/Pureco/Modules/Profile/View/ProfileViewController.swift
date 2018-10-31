@@ -9,7 +9,6 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var cpfTextField: UITextField!
     @IBOutlet weak var zipCodeTextField: UITextField!
@@ -30,32 +29,32 @@ class ProfileViewController: UIViewController {
                     zip: zipCodeTextField.text ?? "",
                     neighbourhood: neighbourhoodTextField.text ?? "")
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.presenter = ProfilePresenter(view: self)
         presenter?.didLoad()
-        
+
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
-    
+
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
-    
+
     func closeView() {
         navigationController?.popViewController(animated: true)
     }
-    
+
     @objc func imageTapped() {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         present(imagePicker, animated: true, completion: nil)
     }
-    
+
     @IBAction func didPressSaveButton(_ sender: Any) {
         presenter?.savePressed()
     }
@@ -63,22 +62,21 @@ class ProfileViewController: UIViewController {
     @IBAction func didPressImageButton(_ sender: Any) {
         imageTapped()
     }
-    
+
     @IBAction func didPressLogoutButton(_ sender: Any) {
         // Perform logout
     }
 }
 
 extension ProfileViewController: ProfileViewProtocol {
-    
     func startLoading() {
         loadingView = showFullScreenLoading()
     }
-    
+
     func stopLoading() {
         loadingView?.removeFromSuperview()
     }
-    
+
     func setup() {
         guard let model = self.viewModel else { return }
         nameTextField.text = model.user.name
@@ -88,7 +86,7 @@ extension ProfileViewController: ProfileViewProtocol {
         streetTextField.text = model.user.addressStreet
         profileImage.kf.setImage(with: model.user.imageURL)
     }
-    
+
     func invalidateCPF() {
         self.showWarning(title: "CPF Inválido")
         cpfTextField.backgroundColor = UIColor.lightRedWarning
@@ -96,10 +94,25 @@ extension ProfileViewController: ProfileViewProtocol {
 }
 
 extension ProfileViewController: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        // Local variable inserted by Swift 4.2 migrator.
+        let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+        let aux = convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)
+        if let image = info[aux] as? UIImage {
             self.profileImage.image = image
             picker.dismiss(animated: true, completion: nil)
         }
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+private func convertFromUIImagePickerControllerInfoKeyDictionary
+    (_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+private func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
+	return input.rawValue
 }

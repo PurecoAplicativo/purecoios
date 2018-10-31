@@ -10,40 +10,40 @@ import UIKit
 import Kingfisher
 
 class MainScreenViewController: UIViewController {
-    
     // MARK: - Outlets
+
     @IBOutlet weak var schedulingCard: ScheduleCleaningCard!
     @IBOutlet weak var lasrCleaningsCard: PreviousCleaningCard!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var profileImage: UIImageView!
-    
+
     // MARK: - Variables
-    
+
     var presenter: MainScreenPresenterProtocol?
     var viewModel: MainScreenViewModel?
     var loadingScreen: UIView?
 
     // MARK: - UIViewController Methods
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter = MainScreenPresenter(view: self)
         presenter?.didLoad()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewWillAppear(animated)
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         super.viewWillDisappear(animated)
     }
-    
+
     // MARK: - Actions
-    
+
     @IBAction func didPressLoginProfileButton(_ sender: Any) {
         if viewModel?.isLoggedIn == true {
             performSegue(withIdentifier: "profileSegue", sender: self)
@@ -54,18 +54,17 @@ class MainScreenViewController: UIViewController {
 // MARK: - MainScreenViewProtocol
 
 extension MainScreenViewController: MainScreenViewProtocol {
-    
     func startLoading() {
         self.view.isUserInteractionEnabled = false
         loadingScreen = self.showFullScreenLoading()
         showWarning(title: "Carregando...")
     }
-    
+
     func stopLoading() {
         self.view.isUserInteractionEnabled = true
         loadingScreen?.removeFromSuperview()
     }
-    
+
     func setup() {
         if viewModel?.isLoggedIn == false {
             schedulingCard.setInvalid()

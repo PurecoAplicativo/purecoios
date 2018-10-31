@@ -9,26 +9,32 @@
 import UIKit
 
 class PageViewController: UIPageViewController {
-    
     var orderedViewControllers: [OnboardingViewController?] =
-        [UIStoryboard(name: "Onboarding", bundle: nil).instantiateViewController(withIdentifier: "Init") as? OnboardingViewController,
-         UIStoryboard(name: "Onboarding", bundle: nil).instantiateViewController(withIdentifier: "Notification") as? OnboardingViewController,
-            UIStoryboard(name: "Onboarding", bundle: nil).instantiateViewController(withIdentifier: "Location") as? OnboardingViewController]
+        [UIStoryboard(name: "Onboarding",
+                      bundle: nil).instantiateViewController(withIdentifier: "Init") as? OnboardingViewController,
+         UIStoryboard(name: "Onboarding",
+                      bundle: nil).instantiateViewController(withIdentifier: "Notification")
+            as? OnboardingViewController,
+         UIStoryboard(name: "Onboarding",
+                      bundle: nil).instantiateViewController(withIdentifier: "Location") as? OnboardingViewController]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource = self
         orderedViewControllers.forEach { $0?.delegate = self }
         if let firstViewController = orderedViewControllers.first {
-            setViewControllers([firstViewController ?? UIViewController()], direction: .forward, animated: true, completion: nil)
+            setViewControllers([firstViewController ?? UIViewController()],
+                               direction: .forward,
+                               animated: true,
+                               completion: nil)
         }
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewWillAppear(animated)
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         super.viewWillDisappear(animated)
@@ -36,7 +42,6 @@ class PageViewController: UIPageViewController {
 }
 
 extension PageViewController: UIPageViewControllerDataSource {
-    
     func pageViewController(_ pageViewController: UIPageViewController,
                             viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let ovc = viewController as? OnboardingViewController else { return nil }
@@ -52,7 +57,7 @@ extension PageViewController: UIPageViewControllerDataSource {
         }
         return orderedViewControllers[previousIndex]
     }
-    
+
     func pageViewController(_ pageViewController: UIPageViewController,
                             viewControllerAfter viewController: UIViewController) -> UIViewController? {
         guard let ovc = viewController as? OnboardingViewController else { return nil }
@@ -61,14 +66,14 @@ extension PageViewController: UIPageViewControllerDataSource {
         }
         let nextIndex = viewControllerIndex + 1
         let orderedViewControllersCount = orderedViewControllers.count
-        
+
         guard orderedViewControllersCount != nextIndex else {
             return nil
         }
         guard orderedViewControllersCount > nextIndex else {
             return nil
         }
-        
+
         return orderedViewControllers[nextIndex]
     }
 }
@@ -76,7 +81,8 @@ extension PageViewController: UIPageViewControllerDataSource {
 extension PageViewController: OnboardingViewNavigationDelegate {
     func didPressNext() {
         guard let currentViewController = self.viewControllers?.first else { return }
-        guard let nextViewController = dataSource?.pageViewController( self, viewControllerAfter: currentViewController ) else {
+        guard let nextViewController = dataSource?.pageViewController(self,
+                                                                      viewControllerAfter: currentViewController) else {
             self.performSegue(withIdentifier: "loginSegue", sender: self)
             return
         }
